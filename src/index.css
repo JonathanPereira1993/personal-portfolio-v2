@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary-color: #181823;
+    --primary-color-light: #19192C;
+    --secondary-color: #5221E6;
+    --color-neutral-5: #8491A0;
+  }
+  html {
+    font-family: Sen, sans-serif;
+    background-color: var(--primary-color);
+    color: #FFF;
+  }
+}
