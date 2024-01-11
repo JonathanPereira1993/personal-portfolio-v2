@@ -4,14 +4,23 @@ export default {
   theme: {
     extend: {
       colors: {
-        "primary-color": "var(--color-primary)",
-        "primary-color-light": "var(--primary-color-light)",
-        "secondary-color": "var(--secondary-color)",
-        "color-neutral-5": "var(--color-neutral-5)",
-      },
+        // Basic
+        colorBlack: "var(--color-black)",
+        colorWhite: "var(--color-white)",
+        colorOnyx: "var(--color-onyx)",
+        colorDarkGray: "var(--dark-gray)",
+        colorMediumGray: "var(--dark-medium-gray)",
+        colorLightGray: "var(--dark-light-gray)",
+        colorLightBlue: "var(--dark-light-blue)",
+        colorLightRed: "var(--dark-light-red)",
+        colorLightYellow: "var(--dark-light-yellow)",
 
-      backgroundImage: {
-        "profile-bg-square": "url('./assets/Profile-BG-Square.jpg')",
+        // Dark
+        colorCardBorder: "var(--color-card-border)",
+        colorBlack50: "var(--color-black-50)",
+        colorWhite10: "var(--color-white-10)",
+        colorWhite25: "var(--color-white-25)",
+        colorWhite70: "var(--color-white-70)",
       },
     },
     fontFamily: {

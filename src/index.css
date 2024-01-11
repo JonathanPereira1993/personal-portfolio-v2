@@ -8,14 +8,26 @@
 
 @layer base {
   :root {
-    --primary-color: #181823;
-    --primary-color-light: #19192C;
-    --secondary-color: #5221E6;
-    --color-neutral-5: #8491A0;
+    /* Basic Colors */
+    --color-black: #0D0D0D;
+    --color-white: #FFFFFF;
+    --color-onyx: #181818;
+    --color-dark-gray: #808080;
+    --color-medium-gray: rgba(128, 128, 128, 0.5);
+    --color-light-gray: #C5C5C5;
+    --color-light-blue: rgba(63, 100, 234, 0.43);
+    --color-light-red: rgba(233, 63, 64, 0.43);
+    --color-light-yellow: rgba(255, 184, 0, 0.43);
+
+    /* Dark Colors */
+    --color-card-border: #383737;
+    --color-black-50: rgba(21, 21, 21, 0.5);
+    --color-white-10: rgba(255, 255, 255, 0.1);
+    --color-white-25: rgba(255, 255, 255, 0.25);
+    --color-white-70: rgba(255, 255, 255, 0.70);
+
   }
   html {
     font-family: Sen, sans-serif;
-    background-color: var(--primary-color);
-    color: #FFF;
   }
 }
