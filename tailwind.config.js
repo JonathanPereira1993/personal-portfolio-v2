@@ -8,7 +8,7 @@ export default {
         colorBlack: "var(--color-black)",
         colorWhite: "var(--color-white)",
         colorOnyx: "var(--color-onyx)",
-        colorDarkGray: "var(--dark-gray)",
+        colorDarkGray: "var(--color-dark-gray)",
         colorMediumGray: "var(--dark-medium-gray)",
         colorLightGray: "var(--dark-light-gray)",
         colorLightBlue: "var(--dark-light-blue)",
@@ -22,9 +22,15 @@ export default {
         colorWhite25: "var(--color-white-25)",
         colorWhite70: "var(--color-white-70)",
       },
+      maxWidth: {
+        widthScreen: "var(--screen-width)",
+      },
+      padding: {
+        paddingX: "var(--global-padding-x)",
+      },
     },
     fontFamily: {
-      signature: ["Aldrich"],
+      signature: ["Zeyada"],
       sen: ["Sen"],
     },
   },

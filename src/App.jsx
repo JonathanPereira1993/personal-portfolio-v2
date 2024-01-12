@@ -1,8 +1,10 @@
+import BgImage from "./components/BgImage";
 import Home from "./pages/Home";
 
 function App() {
   return (
-    <div>
+    <div className="px-paddingX">
+      <BgImage />
       <Home />
     </div>
   );
