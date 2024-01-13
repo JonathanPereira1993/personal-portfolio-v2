@@ -15,8 +15,10 @@ export default {
         colorLightRed: "var(--dark-light-red)",
         colorLightYellow: "var(--dark-light-yellow)",
 
-        // Dark
+        // DarkMode
         colorCardBorder: "var(--color-card-border)",
+        colorBGMain: "var(--color-main-bg)",
+        colorCardBg: "var(--color-card-bg)",
         colorBlack50: "var(--color-black-50)",
         colorWhite10: "var(--color-white-10)",
         colorWhite25: "var(--color-white-25)",
@@ -30,7 +32,7 @@ export default {
       },
     },
     fontFamily: {
-      signature: ["Zeyada"],
+      signature: ["Satisfy"],
       sen: ["Sen"],
     },
   },
