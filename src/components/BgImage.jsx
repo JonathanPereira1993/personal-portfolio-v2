@@ -1,10 +1,10 @@
 import React from "react";
 import BgTopImage from "../assets/BackgroundGradient.svg";
 
-const BgImage = () => {
+const BgImage = ({ className }) => {
   return (
-    <div className="absolute top-0">
-      <img src={BgTopImage} alt="" />
+    <div className={`absolute ${className}`}>
+      <img src={BgTopImage} alt="Background colorfull" />
     </div>
   );
 };

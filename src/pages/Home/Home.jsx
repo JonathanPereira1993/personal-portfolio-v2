@@ -3,6 +3,7 @@ import ProfilePhoto from "../../assets/avatar-photo.png";
 import Button from "../../components/Buttons/Button";
 import Header from "../../components/Header";
 
+import GetInTouch from "./GetInTouch";
 import GetToKnowMe from "./GetToKnowMe";
 import SelectedWork from "./SelectedWork";
 
@@ -44,6 +45,8 @@ const Home = () => {
       <SelectedWork />
 
       <GetToKnowMe />
+
+      <GetInTouch />
     </>
   );
 };
