@@ -1,18 +1,15 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const Link = ({ children, onclick, href }) => {
+const HeaderLink = ({ children, to }) => {
   return (
-    <div
+    <Link
+      to={to}
       className="group hover:text-colorDarkGray duration-200 cursor-pointer h-full relative"
-      onClick={onclick}
     >
-      <span className="h-full text-colorOnyx " href={href}>
-        {children}
-      </span>
-      <div className="absolute duration-200 opacity-0 w-full group-hover:opacity-100 h-[2px] bg-colorDarkGray -bottom-[18px]" />
-      <div className="absolute duration-200 opacity-0 w-full group-hover:opacity-100 h-[2px] bg-colorDarkGray -top-[18px]" />
-    </div>
+      <span className="h-full text-colorOnyx ">{children}</span>
+    </Link>
   );
 };
 
-export default Link;
+export default HeaderLink;

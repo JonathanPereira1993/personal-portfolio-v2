@@ -1,7 +1,6 @@
 import React from "react";
-import ProfilePhoto from "../../assets/avatar-photo.png";
+import ProfilePhoto from "../../assets/avatar-photo2.png";
 import Button from "../../components/Buttons/Button";
-import Header from "../../components/Header";
 
 import GetInTouch from "./GetInTouch";
 import GetToKnowMe from "./GetToKnowMe";
@@ -11,7 +10,6 @@ const Home = () => {
   return (
     <>
       <div className="relative max-w-widthScreen flex mt-[20%] mb-[30%] mx-auto">
-        <Header />
         <div className="flex">
           <div>
             <div className="mb-10">
@@ -19,7 +17,7 @@ const Home = () => {
                 <span className="text-colorDarkGray">I'm </span>
                 Jonathan
               </h1>
-              <p className="max-w-[700px] text-2xl font-light">
+              <p className="max-w-[650px] text-2xl font-light">
                 Hey there! I’m a Front-end Developer specialising in crafting
                 clean and functional web experiences. Feel free to break into my
                 portfolio and check out my work.
@@ -35,7 +33,7 @@ const Home = () => {
           </div>
           <div>
             <img
-              className="absolute right-1/4 translate-x-1/2 -top-20 z-0"
+              className="absolute right-[15%] translate-x-1/2 -top-20 max-w-[400px] z-0"
               src={ProfilePhoto}
               alt="Profile photo"
             />

@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import Link from "./HeaderLinks/Link";
+import React, { useEffect, useState } from "react";
+import HeaderLink from "./HeaderLinks/Link";
 
 // Icons
 import { FaGithub } from "react-icons/fa";
@@ -7,6 +7,16 @@ import { FaInstagram } from "react-icons/fa6";
 import { WiDaySunny } from "react-icons/wi";
 
 const Header = () => {
+  const [isOnTop, setIsOnTop] = useState(false);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", () => {
+        setIsOnTop(window.pageYOffset > 200);
+      });
+    }
+  }, []);
+
   const headerLinks = [
     {
       id: 0,
@@ -20,7 +30,7 @@ const Header = () => {
     },
     {
       id: 2,
-      name: "Network",
+      name: "Notebook",
       link: "",
     },
     {
@@ -31,19 +41,32 @@ const Header = () => {
   ];
 
   return (
-    <div className="fixed w-full flex z-50 rounded-xl top-8 border shadow-lg border-[rgba(255, 255, 255, 0.25)] left-1/2 -translate-x-1/2 h-[60px] flex justify-between max-w-widthScreen mx-auto p-4 bg-colorWhite25 backdrop-blur-[2px]">
+    <div
+      className={`${
+        isOnTop ? "top-0 rounded-t-none bg-white" : "top-8"
+      } fixed w-full flex z-50 rounded-xl border duration-300 shadow-lg h-[60px] border-[rgba(255, 255, 255, 0.25)] left-1/2 -translate-x-1/2 justify-between max-w-widthScreen mx-auto p-4 bg-colorWhite25 backdrop-blur-[2px]`}
+    >
       <div className="flex gap-12">
-        <a href="#">
+        <HeaderLink
+          to={"/"}
+          className="group hover:text-colorDarkGray duration-200 cursor-pointer h-full relative"
+        >
           <span className="absolute -translate-y-1/2 left-5 top-1/2 font-signature text-3xl">
             J
           </span>
-        </a>
+        </HeaderLink>
 
         <div className="ml-[40px] flex gap-10">
           {headerLinks.map((link) => (
-            <Link href={"#"} key={link.id}>
+            <HeaderLink
+              to={`/${link.name}`}
+              key={link.id}
+              className="group hover:text-colorDarkGray duration-200 cursor-pointer h-full relative"
+            >
               {link.name}
-            </Link>
+              <div className="absolute duration-200 opacity-0 w-full group-hover:opacity-100 h-[2px] bg-colorDarkGray -bottom-[18px]" />
+              <div className="absolute duration-200 opacity-0 w-full group-hover:opacity-100 h-[2px] bg-colorDarkGray -top-[18px]" />
+            </HeaderLink>
           ))}
         </div>
       </div>

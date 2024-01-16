@@ -1,4 +1,5 @@
 import React from "react";
+import HeaderLink from "../HeaderLinks/Link";
 
 import BgImage from "../BgImage";
 
@@ -21,30 +22,30 @@ const Footer = () => {
         <div>
           <h3 className="mb-8 font-bold">Links</h3>
           <div className="flex flex-col gap-4 font-light">
-            <a
-              href="#"
+            <HeaderLink
+              to={"/About"}
               className="z-50 duration-200 hover:text-colorLightBlue cursor-pointer"
             >
               About
-            </a>
-            <a
-              href="#"
+            </HeaderLink>
+            <HeaderLink
+              to={"/Work"}
               className="z-50 duration-200 hover:text-colorLightBlue cursor-pointer"
             >
               Work
-            </a>
-            <a
-              href="#"
+            </HeaderLink>
+            <HeaderLink
+              to={"/Techstach"}
               className="z-50 duration-200 hover:text-colorLightBlue cursor-pointer"
             >
               Tech Stack
-            </a>
-            <a
-              href="#"
+            </HeaderLink>
+            <HeaderLink
+              to={"/Contact"}
               className="z-50 duration-200 hover:text-colorLightBlue cursor-pointer"
             >
               Contact
-            </a>
+            </HeaderLink>
           </div>
         </div>
         <div>
