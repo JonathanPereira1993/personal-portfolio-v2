@@ -43,8 +43,4 @@
   html {
     font-family: 'Inter', sans-serif;
   }
-
-  body {
-    background-color: var(--color-main-bg);
-  }
 }

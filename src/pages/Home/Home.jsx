@@ -13,11 +13,11 @@ const Home = () => {
         <div className="flex">
           <div>
             <div className="mb-10">
-              <h1 className="text-colorOnyx text-7xl font-bold mb-10">
+              <h1 className="text-colorOnyx dark:text-white text-7xl font-bold mb-10">
                 <span className="text-colorDarkGray">I'm </span>
                 Jonathan
               </h1>
-              <p className="max-w-[650px] text-2xl font-light">
+              <p className="max-w-[650px] text-2xl font-light dark:text-white">
                 Hey there! I’m a Front-end Developer specialising in crafting
                 clean and functional web experiences. Feel free to break into my
                 portfolio and check out my work.

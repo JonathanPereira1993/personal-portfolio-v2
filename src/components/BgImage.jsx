@@ -3,7 +3,7 @@ import BgTopImage from "../assets/BackgroundGradient.svg";
 
 const BgImage = ({ className }) => {
   return (
-    <div className={`absolute ${className}`}>
+    <div className={`absolute  bg:white dark:bg-[#0D0D0D] ${className}`}>
       <img src={BgTopImage} alt="Background colorfull" />
     </div>
   );
