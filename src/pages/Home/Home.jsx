@@ -5,6 +5,11 @@ import Button from "../../components/Buttons/Button";
 import GetInTouch from "./GetInTouch";
 import GetToKnowMe from "./GetToKnowMe";
 import SelectedWork from "./SelectedWork";
+import { DiCode, DiGitBranch } from "react-icons/di";
+import { PiRocketLaunchFill } from "react-icons/pi";
+import { GoRocket } from "react-icons/go";
+
+
 
 const Home = () => {
   return (
@@ -32,6 +37,9 @@ const Home = () => {
             </div>
           </div>
           <div>
+            <DiCode className="text-[42px] absolute right-[360px] top-[270px] text-zinc-200 dark:text-colorDarkGray"/>
+            <GoRocket className="text-[40px] absolute right-[250px] top-[270px] text-zinc-200 dark:text-colorDarkGray"/>
+            <DiGitBranch className="text-[38px] absolute right-[340px] top-[380px] text-zinc-200 dark:text-colorDarkGray"/>
             <img
               className="absolute right-[15%] translate-x-1/2 top-[250px] max-w-[400px] z-0"
               src={ProfilePhoto}
