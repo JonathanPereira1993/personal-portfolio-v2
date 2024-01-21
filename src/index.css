@@ -15,7 +15,7 @@
     --color-medium-gray: rgba(128, 128, 128, 0.5);
     --color-light-gray: #C5C5C5;
     --color-light-blue: rgba(63, 100, 234, 0.43);
-    --color-light-red: rgba(233, 63, 64, 0.43);
+    --color-light-red: #e93f406e;
     --color-light-yellow: rgba(255, 184, 0, 0.43);
 
     /* Dark Colors */
@@ -44,3 +44,4 @@
     font-family: 'Inter', sans-serif;
   }
 }
+

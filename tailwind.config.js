@@ -24,6 +24,9 @@ export default {
         colorWhite25: "var(--color-white-25)",
         colorWhite70: "var(--color-white-70)",
       },
+      boxShadow: {
+        darkMode: "0px 7px 4px 0px rgba(0, 0, 0, 0.15), 0px 2px 4px 0px rgba(255, 255, 255, 0.08) inset, 0px 1px 2px 0px rgba(255, 255, 255, 0.02) inset",
+      },
       maxWidth: {
         widthScreen: "var(--screen-width)",
       },

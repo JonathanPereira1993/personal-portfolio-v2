@@ -3,8 +3,8 @@ import BgTopImage from "../assets/BackgroundGradient.svg";
 
 const BgImage = ({ className }) => {
   return (
-    <div className={`absolute  bg:white dark:bg-[#0D0D0D] ${className}`}>
-      <img src={BgTopImage} alt="Background colorfull" />
+    <div className={`absolute bg:white dark:bg-[#0D0D0D] ${className}`}>
+      <img className="absolute" draggable="false" src={BgTopImage} alt="Background colorfull" />
     </div>
   );
 };

@@ -9,7 +9,7 @@ import SelectedWork from "./SelectedWork";
 const Home = () => {
   return (
     <>
-      <div className="relative max-w-widthScreen flex mt-[20%] mb-[30%] mx-auto">
+      <div className="relative max-w-widthScreen flex pt-[400px] pb-[400px] mx-auto">
         <div className="flex">
           <div>
             <div className="mb-10">
@@ -25,15 +25,15 @@ const Home = () => {
             </div>
 
             <div className="flex items-center gap-4">
-              <Button className={"bg-black text-white"}>See my resume</Button>
-              <Button className={"bg-[#F3F3F3] text-black"}>
+              <Button className={"bg-[#1A1A1A] dark:shadow-darkMode hover:scale-105 bg-gradient-to-t from-black to-[#131313] text-white"}>See my resume</Button>
+              <Button className={"bg-[#F3F3F3] dark:bg-colorOnyx dark:text-colorWhite hover:scale-105 text-black"}>
                 Get in touch
               </Button>
             </div>
           </div>
           <div>
             <img
-              className="absolute right-[15%] translate-x-1/2 -top-20 max-w-[400px] z-0"
+              className="absolute right-[15%] translate-x-1/2 top-[250px] max-w-[400px] z-0"
               src={ProfilePhoto}
               alt="Profile photo"
             />

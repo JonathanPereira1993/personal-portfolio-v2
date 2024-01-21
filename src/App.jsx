@@ -18,9 +18,9 @@ function App() {
 
   return (
     <DarkModeContext.Provider value={{darkMode, setDarkMode}}>
-    <div className={`${darkMode && "dark"}`}>
+    <div className={`${darkMode ? "dark" : "light"}`}>
       <div className={"dark:bg-[#0D0D0D] bg-white"}>
-        <BgImage className={"top-0 left-0 right-0"} />
+        <BgImage className={"top-0 left-0 right-0 flex h-auto justify-center"} />
         <Router>
           <Header />
           <Routes>
