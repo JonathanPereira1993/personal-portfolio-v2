@@ -58,3 +58,41 @@ export const techStackItems = [
         tagName: "Platform",
     },
 ]
+
+export const headerLinks = [
+    {
+      id: 0,
+      name: "About",
+      link: "",
+    },
+    {
+      id: 1,
+      name: "Work",
+      link: "",
+    },
+    {
+      id: 2,
+      name: "Notebook",
+      link: "",
+    },
+    {
+      id: 3,
+      name: "Contact",
+      link: "",
+    },
+    {
+      id: 4,
+      name: "More",
+      link: "",
+      dropdown: [
+        {
+            id: 0,
+            dropdownName: "Bookshelf",
+        },
+        {
+            id: 1,
+            dropdownName: "Tech Stack",
+        },
+      ],
+    },
+  ];

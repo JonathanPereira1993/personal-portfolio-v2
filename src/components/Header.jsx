@@ -1,12 +1,17 @@
 import React, { useContext, useEffect, useState } from "react";
 import HeaderLink from "./HeaderLinks/Link";
+import { headerLinks } from "../data/ContentData";
+import HeaderDropdown from "./HeaderDropdown/HeaderDropdown";
 import { DarkModeContext } from "../context/DarkModeContext";
+import { Link } from "react-router-dom";
 
 // Icons
 import { FaGithub } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import { WiDaySunny } from "react-icons/wi";
 import { MdDarkMode } from "react-icons/md";
+import { FaAngleDown } from "react-icons/fa6";
+
 
 const Header = () => {
   const [isOnTop, setIsOnTop] = useState(false);
@@ -24,29 +29,6 @@ const Header = () => {
   const toggleDarkMode = () => {
     setDarkMode(!darkMode)
   }
-
-  const headerLinks = [
-    {
-      id: 0,
-      name: "About",
-      link: "",
-    },
-    {
-      id: 1,
-      name: "Work",
-      link: "",
-    },
-    {
-      id: 2,
-      name: "Notebook",
-      link: "",
-    },
-    {
-      id: 3,
-      name: "Contact",
-      link: "",
-    },
-  ];
 
   return (
     <div
@@ -66,15 +48,19 @@ const Header = () => {
 
         <div className="ml-[40px] flex gap-10">
           {headerLinks.map((link) => (
-            <HeaderLink
-              to={`/${link.name}`}
+            <HeaderDropdown
               key={link.id}
-              className="group hover:text-colorDarkGray duration-200 cursor-pointer h-full relative"
+              className="group flex items-center hover:text-colorDarkGray duration-200 cursor-pointer h-full relative"
             >
-              {link.name}
-              <div className="absolute duration-200 opacity-0 w-full group-hover:opacity-100 h-[2px] bg-colorDarkGray -bottom-[18px]" />
-              <div className="absolute duration-200 opacity-0 w-full group-hover:opacity-100 h-[2px] bg-colorDarkGray -top-[18px]" />
-            </HeaderLink>
+              <Link
+                to={`/${link.name}`}
+                className="group flex items-center gap-1 duration-200 cursor-pointer h-full relative"
+              >
+                <span className="h-full text-colorOnyx group-hover:text-[#959595] dark:hover:text-[#808080] dark:text-white">{link.name}</span>
+                {link.dropdown && <span className="text-white group-hover:text-[#959595] text-xs"><FaAngleDown /></span>}
+              </Link>
+              
+            </HeaderDropdown> 
           ))}
         </div>
       </div>

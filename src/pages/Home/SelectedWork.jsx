@@ -10,7 +10,7 @@ const SelectedWork = () => {
       <div className="text-5xl font-semibold dark:text-colorWhite mb-8">Selected Work</div>
       <div className="flex flex-col gap-8">
         {selectedWorkContent.map((item) => (
-          <SelectedWorkItem key={item.id}>
+          <SelectedWorkItem key={item.title}>
             <SelectedWorkIntemContent icon={item.icon} title={item.title} description={item.description} />
         </SelectedWorkItem>
         ))}
