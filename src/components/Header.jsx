@@ -11,11 +11,13 @@ import { FaInstagram } from "react-icons/fa6";
 import { WiDaySunny } from "react-icons/wi";
 import { MdDarkMode } from "react-icons/md";
 import { FaAngleDown } from "react-icons/fa6";
+import SubMenu from "./HeaderLinks/SubMenu";
 
 
 const Header = () => {
   const [isOnTop, setIsOnTop] = useState(false);
-  const {darkMode, setDarkMode} = useContext(DarkModeContext)
+  const {darkMode, setDarkMode} = useContext(DarkModeContext);
+  const [isSubmenuOpen, setIsSubmenuOpen] = useState(false)
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -33,8 +35,8 @@ const Header = () => {
   return (
     <div
       className={`${
-        isOnTop ? "top-0 rounded-t-none bg-white dark:shadow-darkMode dark:bg-[#171b2b]" : "top-8"
-      } fixed w-full flex z-50 dark:bg-[#171b2b] dark:shadow-darkMode rounded-xl border dark:border-transparent duration-300 shadow-lg h-[60px] border-[rgba(255, 255, 255, 0.25)] left-1/2 -translate-x-1/2 justify-between max-w-widthScreen mx-auto p-4 backdrop-blur-[2px]`}
+        isOnTop ? "top-0 rounded-t-none bg-white dark:shadow-darkMode dark:bg-[#171b2b]" : "top-8 backdrop-blur-[2px]"
+      } fixed  w-full flex z-50 dark:bg-colorWhite25 dark:shadow-darkMode rounded-xl border dark:border-transparent duration-300 shadow-lg h-[60px] border-[rgba(255, 255, 255, 0.25)] left-1/2 -translate-x-1/2 justify-between max-w-widthScreen mx-auto p-4`}
     >
       <div className="flex gap-12">
         <HeaderLink
@@ -48,19 +50,25 @@ const Header = () => {
 
         <div className="ml-[40px] flex gap-10">
           {headerLinks.map((link) => (
-            <HeaderDropdown
-              key={link.id}
-              className="group flex items-center hover:text-colorDarkGray duration-200 cursor-pointer h-full relative"
-            >
               <Link
-                to={`/${link.name}`}
+                to={!link.dropdown ? `/${link.name}` : null}
                 className="group flex items-center gap-1 duration-200 cursor-pointer h-full relative"
+                onClick={link.dropdown ? () => setIsSubmenuOpen(!isSubmenuOpen) : null}
               >
-                <span className="h-full text-colorOnyx group-hover:text-[#959595] dark:hover:text-[#808080] dark:text-white">{link.name}</span>
-                {link.dropdown && <span className="text-white group-hover:text-[#959595] text-xs"><FaAngleDown /></span>}
+                <div className="flex items-center gap-1">
+                  <span className="h-full text-colorOnyx group-hover:text-[#646464] dark:hover:text-[#808080] dark:text-white">{link.name}</span>
+                  {link.dropdown && (
+                    <FaAngleDown className={`${isSubmenuOpen ? "rotate-180" : ""} duration-200 text-xs`}/>
+                  )}
+                </div>
+
+                {link.dropdown ? (
+                  <div>
+                    <SubMenu isOpened={isSubmenuOpen} isOnTop={isOnTop} menu={link}/>
+                  </div>
+                ) : null}
+                
               </Link>
-              
-            </HeaderDropdown> 
           ))}
         </div>
       </div>

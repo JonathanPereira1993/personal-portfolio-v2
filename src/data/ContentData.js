@@ -83,7 +83,6 @@ export const headerLinks = [
     {
       id: 4,
       name: "More",
-      link: "",
       dropdown: [
         {
             id: 0,
