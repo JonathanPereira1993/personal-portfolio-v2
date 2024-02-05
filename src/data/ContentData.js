@@ -63,22 +63,22 @@ export const headerLinks = [
     {
       id: 0,
       name: "About",
-      link: "",
+      link: "/About",
     },
     {
       id: 1,
       name: "Work",
-      link: "",
+      link: "/Work",
     },
     {
       id: 2,
       name: "Notebook",
-      link: "",
+      link: "/Notebook",
     },
     {
       id: 3,
       name: "Contact",
-      link: "",
+      link: "/Contact",
     },
     {
       id: 4,
@@ -87,10 +87,12 @@ export const headerLinks = [
         {
             id: 0,
             dropdownName: "Bookshelf",
+            link: "/Bookshelf",
         },
         {
             id: 1,
             dropdownName: "Tech Stack",
+            link: "/TechStack",
         },
       ],
     },

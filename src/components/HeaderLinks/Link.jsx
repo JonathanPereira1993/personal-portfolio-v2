@@ -7,7 +7,7 @@ const HeaderLink = ({ children, to }) => {
       to={to}
       className="group  duration-200 cursor-pointer h-full relative"
     >
-      <span className="h-full text-colorOnyx hover:text-[#959595] dark:hover:text-[#808080] dark:text-white">{children}</span>
+      <span className="h-full text-colorOnyx hover:opacity-80 dark:hover:text-[#808080] dark:text-white">{children}</span>
       
     </Link>
   );
