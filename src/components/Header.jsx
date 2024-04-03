@@ -53,7 +53,9 @@ const Header = () => {
               to={!link.dropdown ? `${link.link}` : null}
               className="dark:text-white group flex items-center gap-1 duration-200 cursor-pointer h-full relative"
               onClick={
-                link.dropdown ? () => setIsSubmenuOpen(!isSubmenuOpen) : null
+                link.dropdown
+                  ? () => setIsSubmenuOpen((prevIsSubmenu) => !prevIsSubmenu)
+                  : null
               }
             >
               <div className="flex items-center gap-1">
