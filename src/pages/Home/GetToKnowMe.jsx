@@ -6,7 +6,9 @@ import MySticker from "../../assets/MySticker.png";
 const GetToKnowMe = () => {
   return (
     <div className="max-w-widthScreen mx-auto mt-[100px]">
-      <div className="text-5xl dark:text-colorWhite font-semibold mb-8">Selected Work</div>
+      <div className="text-5xl dark:text-colorWhite font-semibold mb-8">
+        Get to know me
+      </div>
       <div className="grid grid-cols-2 grid-rows-2 gap-4">
         <GetToKnowMeCards
           title={"About me"}
@@ -28,7 +30,9 @@ const GetToKnowMe = () => {
         </GetToKnowMeCards>
         <GetToKnowMeCards
           title={"Tech Stack"}
-          description={"The dev tools, apps, devices, and games I use and play."}
+          description={
+            "The dev tools, apps, devices, and games I use and play."
+          }
         >
           <img src={MySticker} alt="" />
         </GetToKnowMeCards>
