@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const SubMenu = ({ menu, isOpened, isOnTop }) => {
+const SubMenu = ({ menu, isOpened, isOnTop, className }) => {
   return (
     <div
       className={`${
@@ -11,7 +11,7 @@ const SubMenu = ({ menu, isOpened, isOnTop }) => {
       !isOnTop
         ? "bg-colorWhite25 backdrop-blur-[2px]"
         : "bg-colorWhite70 text-colorOnyx backdrop-blur-[15px]"
-    }`}
+    } ${className}`}
     >
       {menu.dropdown.map((sub, i) => (
         <Link

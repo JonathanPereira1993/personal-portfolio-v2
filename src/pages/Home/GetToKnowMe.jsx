@@ -9,14 +9,15 @@ const GetToKnowMe = () => {
       <div className="text-5xl dark:text-colorWhite font-semibold mb-8">
         Get to know me
       </div>
-      <div className="grid grid-cols-2 grid-rows-2 gap-4 group ">
+      <div className="grid grid-cols-2 grid-rows-2 gap-4 ">
         <GetToKnowMeCards
+          className="group"
           to="/About"
           title={"About me"}
           description={"Who I am and what I do"}
         >
           <img
-            className="group-hover:rotate-6 transition-all duration-300"
+            className="group-hover:rotate-6 group-hover:scale-[1.08] transition-all duration-500"
             src={MySticker}
             alt="My avatar"
           />

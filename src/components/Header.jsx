@@ -34,7 +34,7 @@ const Header = () => {
         isOnTop
           ? "top-0 rounded-t-none bg-colorWhite70 dark:shadow-darkMode dark:text-white backdrop-blur-[15px]"
           : "top-8 backdrop-blur-[2px]"
-      } fixed w-full flex z-50 dark:bg-colorWhite25 dark:shadow-darkMode rounded-xl border dark:border-transparent duration-300 shadow-lg h-[60px] border-[rgba(255, 255, 255, 0.25)] left-1/2 -translate-x-1/2 justify-between max-w-widthScreen mx-auto p-4`}
+      } fixed w-full flex z-50 dark:bg-colorWhite25 dark:shadow-darkMode rounded-xl border dark:border-transparent duration-300 shadow-lg h-[60px] border-[rgba(255, 255, 255, 0.25)] left-1/2 -translate-x-1/2 justify-between max-w-widthScreen mx-auto px-4`}
     >
       <div className="flex gap-12">
         <HeaderLink
@@ -46,7 +46,7 @@ const Header = () => {
           </span>
         </HeaderLink>
 
-        <div className="ml-[40px] flex gap-10">
+        <div className="ml-[40px] h-full flex gap-10">
           {headerLinks.map((link) => (
             <Link
               key={link.id}
@@ -58,8 +58,8 @@ const Header = () => {
                   : null
               }
             >
-              <div className="flex items-center gap-1">
-                <span className="h-full group-hover:opacity-80 dark:hover:opacity-80">
+              <div className="flex h-full duration-500 items-center group-hover:border-b-[3px] border-b-[3px] border-transparent group-hover:border-white">
+                <span className="flex items-center group-hover:opacity-70 dark:hover:opacity-80">
                   {link.name}
                 </span>
                 {link.dropdown && (
@@ -74,6 +74,7 @@ const Header = () => {
               {link.dropdown ? (
                 <div>
                   <SubMenu
+                    className="top-full -right-1/2"
                     isOpened={isSubmenuOpen}
                     isOnTop={isOnTop}
                     menu={link}
