@@ -1,20 +1,17 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { DarkModeContext } from "../context/DarkModeContext";
-import { headerLinks } from "../data/ContentData";
-import HeaderLink from "./HeaderLinks/Link";
-import SubMenu from "./HeaderLinks/SubMenu";
 
 // Icons
 import { FaGithub } from "react-icons/fa";
 import { FaAngleDown, FaInstagram } from "react-icons/fa6";
 import { MdDarkMode } from "react-icons/md";
 import { WiDaySunny } from "react-icons/wi";
+import Navbar from "./Navbar";
 
 const Header = () => {
   const [isOnTop, setIsOnTop] = useState(false);
   const { darkMode, setDarkMode } = useContext(DarkModeContext);
-  const [isSubmenuOpen, setIsSubmenuOpen] = useState(false);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -29,61 +26,24 @@ const Header = () => {
   };
 
   return (
-    <div
+    <header
       className={`${
         isOnTop
           ? "top-0 rounded-t-none bg-colorWhite70 dark:shadow-darkMode dark:text-white backdrop-blur-[15px]"
           : "top-8 backdrop-blur-[2px]"
       } fixed w-full flex z-50 dark:bg-colorWhite25 dark:shadow-darkMode rounded-xl border dark:border-transparent duration-300 shadow-lg h-[60px] border-[rgba(255, 255, 255, 0.25)] left-1/2 -translate-x-1/2 justify-between max-w-widthScreen mx-auto px-4`}
     >
-      <div className="flex gap-12">
-        <HeaderLink
-          to={"/"}
-          className="group hover:text-colorDarkGray duration-200 cursor-pointer h-full relative"
+      <div className="flex ml-4 items-center h-full gap-12">
+        <Link
+          to="/"
+          className="group hover:text-colorDarkGray duration-200 cursor-pointer h-full"
         >
-          <span className="dark:text-white absolute  hover:scale-105 -translate-y-1/2 left-5 top-1/2 text-black font-signature text-3xl">
-            J
+          <span className="dark:text-white flex h-full items-center hover:scale-105 text-black text-xl">
+            portfolio
           </span>
-        </HeaderLink>
+        </Link>
 
-        <div className="ml-[40px] h-full flex gap-10">
-          {headerLinks.map((link) => (
-            <Link
-              key={link.id}
-              to={!link.dropdown ? `${link.link}` : null}
-              className="dark:text-white group flex items-center gap-1 duration-200 cursor-pointer h-full relative"
-              onClick={
-                link.dropdown
-                  ? () => setIsSubmenuOpen((prevIsSubmenu) => !prevIsSubmenu)
-                  : null
-              }
-            >
-              <div className="flex h-full duration-500 items-center group-hover:border-b-[3px] border-b-[3px] border-transparent group-hover:border-white">
-                <span className="flex items-center group-hover:opacity-70 dark:hover:opacity-80">
-                  {link.name}
-                </span>
-                {link.dropdown && (
-                  <FaAngleDown
-                    className={`${
-                      isSubmenuOpen ? "rotate-180" : ""
-                    } ml-1 duration-200 group-hover:opacity-80 dark:hover:opacity-80 text-xs `}
-                  />
-                )}
-              </div>
-
-              {link.dropdown ? (
-                <div>
-                  <SubMenu
-                    className="top-full -right-1/2"
-                    isOpened={isSubmenuOpen}
-                    isOnTop={isOnTop}
-                    menu={link}
-                  />
-                </div>
-              ) : null}
-            </Link>
-          ))}
-        </div>
+        <Navbar headerOnTop={isOnTop} />
       </div>
       <div className="flex gap-4 items-center">
         <a href="https://github.com/JonathanPereira1993" target="_blank">
@@ -103,7 +63,7 @@ const Header = () => {
           )}
         </div>
       </div>
-    </div>
+    </header>
   );
 };
 

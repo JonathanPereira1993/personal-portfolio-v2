@@ -4,7 +4,6 @@ import Button from "../../components/Buttons/Button";
 
 import { DiCode, DiGitBranch } from "react-icons/di";
 import { GoRocket } from "react-icons/go";
-import { PiRocketLaunchFill } from "react-icons/pi";
 import GetInTouch from "./GetInTouch";
 import GetToKnowMe from "./GetToKnowMe";
 import SelectedWork from "./SelectedWork";

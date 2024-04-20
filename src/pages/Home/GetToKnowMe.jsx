@@ -1,6 +1,8 @@
 import React from "react";
 import GetToKnowMeCards from "../../components/GetToKnowMe/GetToKnowMeCards";
 
+import TechStackImage from "../../assets/TechStack.png";
+
 import MySticker from "../../assets/MySticker.png";
 
 const GetToKnowMe = () => {
@@ -37,13 +39,18 @@ const GetToKnowMe = () => {
           <img src={MySticker} alt="" />
         </GetToKnowMeCards>
         <GetToKnowMeCards
+          className="group"
           to="/TechStack"
           title={"Tech Stack"}
           description={
             "The dev tools, apps, devices, and games I use and play."
           }
         >
-          <img src={MySticker} alt="" />
+          <img
+            className="absolute duration-500 left-0 group-hover:-translate-y-1"
+            src={TechStackImage}
+            alt="Teck Stack"
+          />
         </GetToKnowMeCards>
       </div>
     </div>
