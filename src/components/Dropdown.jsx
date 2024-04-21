@@ -8,13 +8,15 @@ const Dropdown = ({ submenus, dropdown, headerOnTop }) => {
       } ${
         headerOnTop
           ? "bg-colorWhite70 backdrop-blur-[15px]"
-          : "backdrop-blur-[2px]"
+          : "bg-colorWhite70 backdrop-blur-[2px]"
       }`}
     >
       {submenus.map((submenu, index) => (
         <li
           key={index}
-          className={`duration-300 hover:bg-colorWhite70 dark:hover:bg-zinc-400 dark:text-white  rounded-lg py-1 px-2 hover:backdrop-blur-[15px] ${
+          className={`${
+            headerOnTop ? "hover:bg-zinc-200" : "hover:bg-zinc-200"
+          } duration-300  dark:hover:bg-colorWhite25 dark:hover:bg-zinc-400 dark:text-white  rounded-lg py-1 px-2 ${
             dropdown ? "h-full" : "h-0"
           }`}
         >

@@ -17,7 +17,9 @@ const About = () => {
         <div className="col-span-2">
           {/* Section */}
           <div>
-            <h2 className="uppercase dark:text-[#808080] font-semibold mb-2">Who I am</h2>
+            <h2 className="uppercase dark:text-[#808080] font-semibold mb-2">
+              Who I am
+            </h2>
             <p className="text-lg dark:text-[#808080] font-light">
               I’m Jonathan (Pronounced “John-na-than”) an autodidact front-end
               developer based in Portugal 🇵🇹.
@@ -26,7 +28,9 @@ const About = () => {
 
           {/* Section */}
           <div className="mt-8">
-            <h2 className="uppercase dark:text-[#808080] font-semibold mb-2">Who I do</h2>
+            <h2 className="uppercase dark:text-[#808080] font-semibold mb-2">
+              What I do
+            </h2>
             <p className="text-lg dark:text-[#808080] font-light">
               With 2+ years of experience working at a tech company, I was
               fortunate to learn front-end working with Outsystems (Low-code
@@ -42,7 +46,9 @@ const About = () => {
 
           {/* Section */}
           <div className="mt-8">
-            <h2 className="uppercase dark:text-[#808080] font-semibold mb-2">Who I did</h2>
+            <h2 className="uppercase dark:text-[#808080] font-semibold mb-2">
+              What I did
+            </h2>
             <p className="text-lg dark:text-[#808080] font-light">
               Before jumping into the web development world, I studied Web
               Development and Multimedia and after that, I enrolled in the Games

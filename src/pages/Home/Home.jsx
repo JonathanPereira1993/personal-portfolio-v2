@@ -29,14 +29,14 @@ const Home = () => {
             <div className="flex items-center gap-4">
               <Button
                 className={
-                  "bg-[#1A1A1A] dark:shadow-darkMode hover:scale-105 bg-gradient-to-t from-black to-[#131313] text-white"
+                  "bg-[#1A1A1A] dark:shadow-darkMode hover:shadow-lg bg-gradient-to-t from-black to-[#131313] text-white"
                 }
               >
                 See my resume
               </Button>
               <Button
                 className={
-                  "bg-[#F3F3F3] dark:bg-colorOnyx dark:text-colorWhite hover:scale-105 text-black"
+                  "bg-[#F3F3F3] dark:bg-colorOnyx hover:shadow-lg dark:text-colorWhite text-black"
                 }
               >
                 Get in touch

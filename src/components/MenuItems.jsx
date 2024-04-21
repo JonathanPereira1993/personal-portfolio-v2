@@ -1,6 +1,8 @@
 import { useState } from "react";
 import Dropdown from "./Dropdown";
 
+import { FaAngleDown } from "react-icons/fa6";
+
 import { Link } from "react-router-dom";
 
 import { useEffect, useRef } from "react";
@@ -34,9 +36,19 @@ const MenuItems = ({ items, headerOnTop }) => {
             aria-haspopup="menu"
             aria-expanded={dropdown ? "true" : "false"}
             onClick={() => setDropdown((prev) => !prev)}
-            className="duration-300 hover:bg-colorWhite70 dark:text-white rounded-lg p-2 hover:backdrop-blur-[15px]"
+            className="group duration-300 group dark:text-white text-lg rounded-lg p-2 flex items-center gap-2"
           >
             {items.name}
+            <div
+              className={`${
+                headerOnTop ? "bg-zinc-300" : "bg-white"
+              } h-0 duration-300 group-hover:h-1 w-full rounded-t-xl absolute left-0 right-0 -bottom-[7px]`}
+            />
+            <FaAngleDown
+              className={`${
+                dropdown ? "rotate-180" : ""
+              } text-base duration-500`}
+            />
           </button>
           <Dropdown
             submenus={items.dropdown}
@@ -47,9 +59,14 @@ const MenuItems = ({ items, headerOnTop }) => {
       ) : (
         <Link
           to={items.link}
-          className="duration-300 hover:bg-colorWhite70 dark:text-white  rounded-lg p-2 hover:backdrop-blur-[15px]"
+          className="group duration-300  text-lg relative dark:text-white  rounded-lg p-2 hover:backdrop-blur-[15px]"
         >
           {items.name}
+          <div
+            className={`${
+              headerOnTop ? "bg-zinc-300" : "bg-white"
+            } h-0 duration-300 group-hover:h-1 w-full rounded-t-xl absolute  left-0 right-0  -bottom-[8px]`}
+          />
         </Link>
       )}
     </li>

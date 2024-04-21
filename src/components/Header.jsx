@@ -29,16 +29,16 @@ const Header = () => {
     <header
       className={`${
         isOnTop
-          ? "top-0 rounded-t-none bg-colorWhite70 dark:shadow-darkMode dark:text-white backdrop-blur-[15px]"
-          : "top-8 backdrop-blur-[2px]"
-      } fixed w-full flex z-50 dark:bg-colorWhite25 dark:shadow-darkMode rounded-xl border dark:border-transparent duration-300 shadow-lg h-[60px] border-[rgba(255, 255, 255, 0.25)] left-1/2 -translate-x-1/2 justify-between max-w-widthScreen mx-auto px-4`}
+          ? "top-0 rounded-t-none bg-colorWhite70 dark:bg-colorWhite25 dark:shadow-darkMode dark:text-white backdrop-blur-[15px]"
+          : "top-8 backdrop-blur-[25px] bg-colorWhite70 dark:bg-colorWhite25"
+      } fixed w-full flex z-50 dark:shadow-darkMode rounded-xl border dark:border-transparent duration-300 shadow-lg h-[60px] border-[rgba(255, 255, 255, 0.25)] left-1/2 -translate-x-1/2 justify-between max-w-widthScreen mx-auto px-4`}
     >
       <div className="flex ml-4 items-center h-full gap-12">
         <Link
           to="/"
           className="group hover:text-colorDarkGray duration-200 cursor-pointer h-full"
         >
-          <span className="dark:text-white flex h-full items-center hover:scale-105 text-black text-xl">
+          <span className="dark:text-white flex h-full items-center text-black text-xl">
             portfolio
           </span>
         </Link>
