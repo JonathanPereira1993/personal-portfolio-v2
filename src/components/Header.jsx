@@ -4,7 +4,7 @@ import { DarkModeContext } from "../context/DarkModeContext";
 
 // Icons
 import { FaGithub } from "react-icons/fa";
-import { FaAngleDown, FaInstagram } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa6";
 import { MdDarkMode } from "react-icons/md";
 import { WiDaySunny } from "react-icons/wi";
 import Navbar from "./Navbar";
