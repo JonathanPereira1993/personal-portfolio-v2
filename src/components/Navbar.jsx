@@ -1,5 +1,5 @@
 import { headerLinks } from "../data/ContentData";
-import MenuItems from "./MenuItems";
+import MenuItems from "./UI/MenuItems";
 
 const Navbar = ({ headerOnTop }) => {
   return (

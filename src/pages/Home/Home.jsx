@@ -1,6 +1,6 @@
 import React from "react";
 import ProfilePhoto from "../../assets/avatar-photo2.png";
-import Button from "../../components/Buttons/Button";
+import Button from "../../components/UI/Button";
 
 import { DiCode, DiGitBranch } from "react-icons/di";
 import { GoRocket } from "react-icons/go";
@@ -19,7 +19,7 @@ const Home = () => {
                 <span className="text-colorDarkGray">I'm </span>
                 Jonathan
               </h1>
-              <p className="max-w-[650px] text-2xl font-light dark:text-white">
+              <p className="max-w-[600px] text-2xl font-light dark:text-white">
                 Hey there! I’m a Front-end Developer specialising in crafting
                 clean and functional web experiences. Feel free to break into my
                 portfolio and check out my work.
@@ -44,13 +44,13 @@ const Home = () => {
             </div>
           </div>
           <div>
-            <DiCode className="text-[42px] absolute right-[360px] top-[270px] text-zinc-200 dark:text-colorDarkGray" />
-            <GoRocket className="text-[40px] absolute right-[250px] top-[270px] text-zinc-200 dark:text-colorDarkGray" />
-            <DiGitBranch className="text-[38px] absolute right-[340px] top-[380px] text-zinc-200 dark:text-colorDarkGray" />
+            <DiCode className="text-[42px] absolute right-[400px] top-[270px] text-zinc-200 dark:text-colorDarkGray" />
+            <GoRocket className="text-[40px] absolute right-[300px] top-[270px] text-zinc-200 dark:text-colorDarkGray" />
+            <DiGitBranch className="text-[38px] absolute right-[390px] top-[380px] text-zinc-200 dark:text-colorDarkGray" />
             <img
-              className="absolute right-[15%] translate-x-1/2 top-[250px] max-w-[400px] z-0"
+              className="absolute right-0 top-[250px] max-w-[400px] z-0"
               src={ProfilePhoto}
-              alt="Profile photo"
+              alt="Profile picture"
             />
           </div>
         </div>

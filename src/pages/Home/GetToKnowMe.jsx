@@ -1,5 +1,5 @@
 import React from "react";
-import GetToKnowMeCards from "../../components/GetToKnowMe/GetToKnowMeCards";
+import GetToKnowMeCards from "../../components/GetToKnowMeCards";
 
 import TechStackImage from "../../assets/TechStack.png";
 

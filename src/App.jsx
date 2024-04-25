@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
-import BgImage from "./components/BgImage";
-import Footer from "./components/Footer/Footer";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
+import BgImage from "./components/UI/BgImage";
 import { DarkModeContext } from "./context/DarkModeContext";
 import About from "./pages/About/About";
 import Bookshelf from "./pages/Bookshelf/Bookshelf";
@@ -25,15 +25,17 @@ function App() {
           />
           <Router>
             <Header />
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/About" element={<About />} />
-              <Route path="/Work" element={<Work />} />
-              <Route path="/Notebook" element={<Notebook />} />
-              <Route path="/Contact" element={<Contact />} />
-              <Route path="/Bookshelf" element={<Bookshelf />} />
-              <Route path="/Techstack" element={<Techstack />} />
-            </Routes>
+            <main>
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/About" element={<About />} />
+                <Route path="/Work" element={<Work />} />
+                <Route path="/Notebook" element={<Notebook />} />
+                <Route path="/Contact" element={<Contact />} />
+                <Route path="/Bookshelf" element={<Bookshelf />} />
+                <Route path="/Techstack" element={<Techstack />} />
+              </Routes>
+            </main>
             <Footer />
           </Router>
         </div>
