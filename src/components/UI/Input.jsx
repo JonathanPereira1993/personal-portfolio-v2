@@ -20,7 +20,7 @@ const Input = ({
           id={id}
           className={`${
             isTextArea ? "bg-[#F3F3F3] p-6 rounded-xl" : "bg-transparent ml-2"
-          } flex-1`}
+          } flex-1 placeholder:font-light`}
         />
       ) : (
         <input
@@ -28,7 +28,7 @@ const Input = ({
           id={id}
           className={`${
             isTextArea ? "bg-[#F3F3F3] p-6 rounded-xl" : "bg-transparent ml-2"
-          } flex-1`}
+          } flex-1 placeholder:font-light`}
         />
       )}
 

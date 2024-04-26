@@ -1,26 +1,20 @@
 import React from "react";
 import ProfilePhoto from "../../assets/avatar-photo2.png";
+import Banner from "../../components/Banner";
 
 const About = () => {
   return (
-    <div className="relative max-w-widthScreen pt-[300px] mx-auto">
-      <div className="relative">
-        <h1 className="text-colorOnyx dark:text-colorWhite text-7xl font-bold mb-4">
-          A little bit about me
-        </h1>
-        <p className="text-2xl text-colorDarkGray font-light opacity-50 pb-[60px]">
-          Who I am and what I do
-        </p>
-        <div className="absolute bottom-0 w-[100%] h-[1px] bg-colorCardBorder dark:bg-[#ffffff30]" />
-      </div>
+    <div className="relative max-w-widthScreen pt-[150px] sm:pt-[300px] mx-auto">
+      <Banner title="A little bit about me" subtitle="Who I am and what I do" />
+
       <div className="grid grid-cols-3 gap-[75px] mt-[60px]">
         <div className="col-span-2">
           {/* Section */}
           <div>
-            <h2 className="uppercase dark:text-[#808080] font-semibold mb-2">
+            <h2 className="uppercase dark:text-[#c3c3c3] font-semibold mb-2">
               Who I am
             </h2>
-            <p className="text-lg dark:text-[#808080] font-light">
+            <p className="text-lg dark:text-[#a0a0a0] font-light">
               I’m Jonathan (Pronounced “John-na-than”) an autodidact front-end
               developer based in Portugal 🇵🇹.
             </p>
@@ -28,10 +22,10 @@ const About = () => {
 
           {/* Section */}
           <div className="mt-8">
-            <h2 className="uppercase dark:text-[#808080] font-semibold mb-2">
+            <h2 className="uppercase dark:text-[#c3c3c3] font-semibold mb-2">
               What I do
             </h2>
-            <p className="text-lg dark:text-[#808080] font-light">
+            <p className="text-lg dark:text-[#a0a0a0] font-light">
               With 2+ years of experience working at a tech company, I was
               fortunate to learn front-end working with Outsystems (Low-code
               development platform), helping my client’s UX/UI teams . Besides
@@ -46,10 +40,10 @@ const About = () => {
 
           {/* Section */}
           <div className="mt-8">
-            <h2 className="uppercase dark:text-[#808080] font-semibold mb-2">
+            <h2 className="uppercase dark:text-[#c3c3c3] font-semibold mb-2">
               What I did
             </h2>
-            <p className="text-lg dark:text-[#808080] font-light">
+            <p className="text-lg dark:text-[#a0a0a0] font-light">
               Before jumping into the web development world, I studied Web
               Development and Multimedia and after that, I enrolled in the Games
               and Multimedia bachelor's degree. With this academic experience, I
@@ -63,7 +57,7 @@ const About = () => {
 
           {/* Section */}
           <div className="mt-10">
-            <p className="text-lg dark:text-[#808080] font-light">
+            <p className="text-lg dark:text-[#a0a0a0] font-light">
               Feel free to reach out via{" "}
               <a href="#" className="underline font-semibold cursor-pointer">
                 e-mail
@@ -78,7 +72,7 @@ const About = () => {
               . Want to see where I’ve worked? Check out my Resume, or Connect
               with me on LinkedIn.
             </p>
-            <p className="text-lg dark:text-[#808080] font-light mt-6">
+            <p className="text-lg dark:text-[#a0a0a0] font-light mt-6">
               Let's build something great,
             </p>
           </div>

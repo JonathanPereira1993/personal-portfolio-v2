@@ -1,4 +1,6 @@
 import React from "react";
+import Banner from "../../components/Banner";
+import Button from "../../components/UI/Button";
 import Input from "../../components/UI/Input";
 
 // Icons
@@ -7,20 +9,12 @@ import { FaInstagram } from "react-icons/fa6";
 
 const Contact = () => {
   return (
-    <div className="relative max-w-widthScreen pt-[300px] mx-auto">
-      <div className="relative">
-        <h1 className="text-colorOnyx dark:text-colorWhite text-7xl font-bold mb-4">
-          Get in touch
-        </h1>
-        <p className="text-2xl text-colorDarkGray font-light opacity-50 pb-[60px]">
-          Let's build something awesome
-        </p>
-        <div className="absolute bottom-0 w-[100%] h-[1px] bg-colorCardBorder dark:bg-[#ffffff30]" />
-      </div>
+    <div className="relative max-w-widthScreen pt-[150px] sm:pt-[300px] mx-auto">
+      <Banner title="Get in touch" subtitle="Let's build something awesome" />
 
       <form
         action=""
-        className="mt-10 w-full bg-[#F6F6F6] rounded-xl shadow-lg border"
+        className="mt-10 mx-auto sm:w-full w-[95vw] bg-[#F6F6F6] rounded-xl shadow-lg border pb-4"
       >
         <div className="px-3 h-[54px] w-full flex items-center justify-between bg-[#F6F6F6] rounded-t-xl border-b-2">
           <div className="flex items-center gap-2">
@@ -31,7 +25,7 @@ const Contact = () => {
           <h2>New Message</h2>
           <div></div>
         </div>
-        <div className="w-full px-8 py-5">
+        <div className="w-full px-4 py-5">
           <Input
             id="email"
             type="email"
@@ -62,6 +56,9 @@ const Contact = () => {
             placeholder="Write your message here"
             required
           />
+        </div>
+        <div className="px-4 flex sm:justify-end justify-center">
+          <Button className="w-full sm:w-[160px]">Send</Button>
         </div>
       </form>
 

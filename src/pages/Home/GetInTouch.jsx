@@ -16,12 +16,8 @@ const GetInTouch = () => {
         </p>
       </div>
       <div className="flex self-center justify-end">
-        <Button
-          className={
-            "bg-[#1A1A1A] cursor-pointer transition-all duration-500 group dark:shadow-darkMode hover:scale-105 bg-gradient-to-t from-black to-[#131313] text-white"
-          }
-        >
-          <MdOutlineRocketLaunch className="text-2xl group-hover:rotate-45 transition-all duration-500" />
+        <Button className={" transition-all duration-100 group "}>
+          <MdOutlineRocketLaunch className="text-2xl group-hover:rotate-45 group-hover:-translate-x-1 transition-all duration-500" />
           <span className="ml-4">Get in touch</span>
         </Button>
       </div>

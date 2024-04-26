@@ -10,7 +10,7 @@ import SelectedWork from "./SelectedWork";
 
 const Home = () => {
   return (
-    <>
+    <div className="w-[90vw] sm:w-full mx-auto">
       <div className="relative max-w-widthScreen flex pt-[400px] pb-[400px] mx-auto">
         <div className="flex">
           <div>
@@ -26,29 +26,19 @@ const Home = () => {
               </p>
             </div>
 
-            <div className="flex items-center gap-4">
-              <Button
-                className={
-                  "bg-[#1A1A1A] dark:shadow-darkMode hover:shadow-lg bg-gradient-to-t from-black to-[#131313] text-white"
-                }
-              >
-                See my resume
-              </Button>
-              <Button
-                className={
-                  "bg-[#F3F3F3] dark:bg-colorOnyx hover:shadow-lg dark:text-colorWhite text-black"
-                }
-              >
+            <div className="flex flex-col sm:flex-row items-center gap-4">
+              <Button className="w-full sm:w-fit">See my resume</Button>
+              <Button isOutline className="w-full sm:w-fit">
                 Get in touch
               </Button>
             </div>
           </div>
           <div>
-            <DiCode className="text-[42px] absolute right-[400px] top-[270px] text-zinc-200 dark:text-colorDarkGray" />
-            <GoRocket className="text-[40px] absolute right-[300px] top-[270px] text-zinc-200 dark:text-colorDarkGray" />
-            <DiGitBranch className="text-[38px] absolute right-[390px] top-[380px] text-zinc-200 dark:text-colorDarkGray" />
+            <DiCode className="text-[42px] absolute opacity-0 sm:opacity-100  right-[400px] top-[270px] text-zinc-200 dark:text-colorDarkGray" />
+            <GoRocket className="text-[40px] absolute opacity-0 sm:opacity-100 right-[300px] top-[270px] text-zinc-200 dark:text-colorDarkGray" />
+            <DiGitBranch className="text-[38px] absolute opacity-0 sm:opacity-100 right-[390px] top-[380px] text-zinc-200 dark:text-colorDarkGray" />
             <img
-              className="absolute right-0 top-[250px] max-w-[400px] z-0"
+              className="absolute sm:right-0 right-1/2 sm:translate-x-0 translate-x-1/2 sm:top-[250px] top-[130px] max-w-[200px] sm:max-w-[400px] z-0"
               src={ProfilePhoto}
               alt="Profile picture"
             />
@@ -60,7 +50,7 @@ const Home = () => {
       <GetToKnowMe />
 
       <GetInTouch />
-    </>
+    </div>
   );
 };
 
