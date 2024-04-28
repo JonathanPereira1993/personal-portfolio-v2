@@ -32,25 +32,25 @@ const Footer = () => {
           <div className="flex flex-col gap-4 font-light">
             <Link
               to={"/About"}
-              className="z-50 dark:text-[#C5C5C5] duration-200 cursor-pointer"
+              className="z-50 dark:text-[#C5C5C5] hover:underline duration-200 cursor-pointer"
             >
               About
             </Link>
             <Link
               to={"/Work"}
-              className="z-50 dark:text-[#C5C5C5] duration-200 cursor-pointer"
+              className="z-50 dark:text-[#C5C5C5] hover:underline duration-200 cursor-pointer"
             >
               Work
             </Link>
             <Link
               to={"/Techstach"}
-              className="z-50 dark:text-[#C5C5C5] duration-200 cursor-pointer"
+              className="z-50 dark:text-[#C5C5C5] hover:underline duration-200 cursor-pointer"
             >
               Tech Stack
             </Link>
             <Link
               to={"/Contact"}
-              className="z-50 dark:text-[#C5C5C5] duration-200 cursor-pointer"
+              className="z-50 dark:text-[#C5C5C5] hover:underline duration-200 cursor-pointer"
             >
               Contact
             </Link>
@@ -63,25 +63,25 @@ const Footer = () => {
           <div className="flex flex-col gap-4 font-light">
             <a
               href="#"
-              className="z-50 dark:text-[#C5C5C5] duration-200 hover:text-[#959595] dark:hover:text-[#808080] cursor-pointer"
+              className="z-50 dark:text-[#C5C5C5] hover:underline duration-200 dark:hover:text-[#808080] cursor-pointer"
             >
               Email
             </a>
             <a
               href="#"
-              className="z-50 dark:text-[#C5C5C5] duration-200 hover:text-[#959595] dark:hover:text-[#808080] cursor-pointer"
+              className="z-50 dark:text-[#C5C5C5] hover:underline duration-200 dark:hover:text-[#808080] cursor-pointer"
             >
               LinkedIn
             </a>
             <a
               href="#"
-              className="z-50 dark:text-[#C5C5C5] duration-200 hover:text-[#959595] dark:hover:text-[#808080] cursor-pointer"
+              className="z-50 dark:text-[#C5C5C5] hover:underline duration-200 dark:hover:text-[#808080] cursor-pointer"
             >
               GitHub
             </a>
             <a
               href="#"
-              className="z-50 dark:text-[#C5C5C5] duration-200 hover:text-[#959595] dark:hover:text-[#808080] cursor-pointer"
+              className="z-50 dark:text-[#C5C5C5] hover:underline duration-200 dark:hover:text-[#808080] cursor-pointer"
             >
               Twitter
             </a>

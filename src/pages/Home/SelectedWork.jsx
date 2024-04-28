@@ -7,7 +7,7 @@ import { selectedWorkContent } from "../../data/ContentData";
 const SelectedWork = () => {
   return (
     <div className="max-w-widthScreen mx-auto">
-      <div className="text-5xl font-semibold dark:text-colorWhite mb-8">
+      <div className="text-5xl font-semibold text-center sm:text-left dark:text-colorWhite mb-8">
         Selected Work
       </div>
       <div className="flex flex-col gap-8">

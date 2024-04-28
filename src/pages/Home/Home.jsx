@@ -11,7 +11,7 @@ import SelectedWork from "./SelectedWork";
 const Home = () => {
   return (
     <div className="w-[90vw] sm:w-full mx-auto">
-      <div className="relative max-w-widthScreen flex pt-[400px] pb-[400px] mx-auto">
+      <div className="relative max-w-widthScreen flex pt-[400px] pb-[150px] sm:pb-[250px] mx-auto">
         <div className="flex">
           <div>
             <div className="mb-10">
@@ -19,7 +19,7 @@ const Home = () => {
                 <span className="text-colorDarkGray">I'm </span>
                 Jonathan
               </h1>
-              <p className="max-w-[600px] text-2xl font-light dark:text-white">
+              <p className="max-w-[600px] sm:text-2xl text-xl font-light dark:text-white">
                 Hey there! I’m a Front-end Developer specialising in crafting
                 clean and functional web experiences. Feel free to break into my
                 portfolio and check out my work.
