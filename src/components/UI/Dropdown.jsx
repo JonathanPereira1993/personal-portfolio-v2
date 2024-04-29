@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Dropdown = ({ submenus, dropdown, headerOnTop }) => {
   return (
     <ul
-      className={`overflow-hidden w-max absolute z-50 dark:bg-colorWhite25 dark:shadow-darkMode rounded-xl border dark:border-transparent p-4 shadow-lg top-14 -right-[40px] grid duration-500 transition-all ${
+      className={`overflow-hidden w-max absolute z-50 dark:bg-[#808080ce] dark:shadow-darkMode rounded-xl border dark:border-transparent p-4 shadow-lg top-14 -right-[40px] grid duration-500 transition-all ${
         dropdown ? "grid-rows-full" : "grid-rows-0 py-0 opacity-0"
       } ${
         headerOnTop

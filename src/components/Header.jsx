@@ -29,7 +29,7 @@ const Header = () => {
     <header
       className={`${
         isOnTop
-          ? "top-0 rounded-t-none bg-colorWhite70 dark:bg-colorWhite25 dark:shadow-darkMode dark:text-white backdrop-blur-[15px]"
+          ? "top-0 rounded-t-none bg-colorWhite70 dark:bg-[#808080ce] dark:shadow-darkMode dark:text-white backdrop-blur-[15px]"
           : "top-8 backdrop-blur-[25px] bg-colorWhite70 dark:bg-colorWhite25"
       } fixed w-full flex z-50 dark:shadow-darkMode rounded-xl border dark:border-transparent duration-300 shadow-lg h-[60px] border-[rgba(255, 255, 255, 0.25)] left-1/2 -translate-x-1/2 justify-between max-w-widthScreen mx-auto px-4`}
     >

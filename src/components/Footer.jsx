@@ -6,7 +6,7 @@ import BgImage from "./UI/BgImage";
 const Footer = () => {
   const dateYear = new Date();
   return (
-    <div className="relative mt-[100px] border-t py-16 overflow-hidden">
+    <div className="relative mt-[100px] border-t border-colorCardBorder dark:border-[#ffffff30] py-16 overflow-hidden">
       <BgImage
         className={
           "absolute rotate-180 text-center flex justify-center bottom-0 z-0 right-0 left-0"
@@ -63,25 +63,25 @@ const Footer = () => {
           <div className="flex flex-col gap-4 font-light">
             <a
               href="#"
-              className="z-50 dark:text-[#C5C5C5] hover:underline duration-200 dark:hover:text-[#808080] cursor-pointer"
+              className="z-50 dark:text-[#C5C5C5] hover:underline duration-200  cursor-pointer"
             >
               Email
             </a>
             <a
               href="#"
-              className="z-50 dark:text-[#C5C5C5] hover:underline duration-200 dark:hover:text-[#808080] cursor-pointer"
+              className="z-50 dark:text-[#C5C5C5] hover:underline duration-200  cursor-pointer"
             >
               LinkedIn
             </a>
             <a
               href="#"
-              className="z-50 dark:text-[#C5C5C5] hover:underline duration-200 dark:hover:text-[#808080] cursor-pointer"
+              className="z-50 dark:text-[#C5C5C5] hover:underline duration-200 cursor-pointer"
             >
               GitHub
             </a>
             <a
               href="#"
-              className="z-50 dark:text-[#C5C5C5] hover:underline duration-200 dark:hover:text-[#808080] cursor-pointer"
+              className="z-50 dark:text-[#C5C5C5] hover:underline duration-200 cursor-pointer"
             >
               Twitter
             </a>

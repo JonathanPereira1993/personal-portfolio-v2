@@ -14,9 +14,9 @@ const Contact = () => {
 
       <form
         action=""
-        className="mt-10 mx-auto sm:w-full w-[95vw] bg-[#F6F6F6] rounded-xl shadow-lg border pb-4"
+        className="mt-10 mx-auto sm:w-full w-[95vw] bg-[#F6F6F6] dark:bg-[#181818]  rounded-xl shadow-lg border dark:border-[#383737] pb-4"
       >
-        <div className="px-3 h-[54px] w-full flex items-center justify-between bg-[#F6F6F6] rounded-t-xl border-b-2">
+        <div className="px-3 h-[54px] w-full dark:text-white flex items-center justify-between bg-[#F6F6F6] dark:bg-[#181818] rounded-t-xl border-b-2 dark:border-[#383737]">
           <div className="flex items-center gap-2">
             <div className="w-3 h-3 bg-[#F63636] cursor-pointer hover:brightness-[180%] rounded-full" />
             <div className="w-3 h-3 bg-[#F6C136] cursor-pointer hover:brightness-[120%] rounded-full" />
@@ -64,11 +64,11 @@ const Contact = () => {
 
       <div className="flex justify-center gap-6 mt-20">
         <a href="https://github.com/JonathanPereira1993" target="_blank">
-          <FaGithub className="w-8 h-8 text-colorOnyx dark:text-white cursor-pointer hover:scale-110 transition-transform duration-200" />
+          <FaGithub className="w-8 h-8 text-colorOnyx dark:text-[#b6b5b5] cursor-pointer hover:text-white transition-transform duration-200" />
         </a>
 
         <a href="https://www.instagram.com/jonathanmyself/" target="_blank">
-          <FaInstagram className="w-8 h-8 text-colorOnyx dark:text-white cursor-pointer hover:scale-110 transition-transform duration-200" />
+          <FaInstagram className="w-8 h-8 text-colorOnyx dark:text-[#b6b5b5] cursor-pointer hover:text-white transition-transform duration-200" />
         </a>
       </div>
     </div>
