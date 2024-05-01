@@ -2,6 +2,10 @@ import ReactIcon from "../assets/ReactIcon.svg";
 
 // TechStack Images:
 import FigmaLogo from "../assets/TechStackImages/Figma.png";
+import GitHubLogo from "../assets/TechStackImages/GitHubLogo.png";
+import LogicProLogo from "../assets/TechStackImages/LogicProLogo .png";
+import OutsystemsLogo from "../assets/TechStackImages/Outsystems.png";
+import SassLogo from "../assets/TechStackImages/SassLogo.png";
 import TailwindLogo from "../assets/TechStackImages/Tailwind.png";
 import VSCodeLogo from "../assets/TechStackImages/VSCode.png";
 
@@ -51,14 +55,26 @@ export const techStackItems = [
   {
     id: 4,
     title: "SASS",
-    image: "",
+    image: SassLogo,
     tagName: "CSS",
   },
   {
     id: 5,
     title: "Outsystems",
-    image: "",
+    image: OutsystemsLogo,
     tagName: "Platform",
+  },
+  {
+    id: 6,
+    title: "Logic Pro",
+    image: LogicProLogo,
+    tagName: "Music",
+  },
+  {
+    id: 7,
+    title: "GitHub",
+    image: GitHubLogo,
+    tagName: "Version Control",
   },
 ];
 

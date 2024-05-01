@@ -1,9 +1,13 @@
 import React from "react";
 import { MdOutlineRocketLaunch } from "react-icons/md";
+import { useNavigate } from "react-router-dom";
+import useScrollToTop from "../../hooks/useScrollToTop";
 
 import Button from "../../components/UI/Button";
 
 const GetInTouch = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="grid sm:grid-cols-2 mx-auto max-w-widthScreen mt-[100px] z-50">
       <div>
@@ -17,6 +21,10 @@ const GetInTouch = () => {
       </div>
       <div className="flex self-center justify-end">
         <Button
+          onClick={() => {
+            navigate("/Contact");
+            useScrollToTop();
+          }}
           className={
             "transition-all duration-100 group w-full sm:w-fit mt-10 sm:mt-0"
           }

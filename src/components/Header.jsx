@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { DarkModeContext } from "../context/DarkModeContext";
+import useScrollToTop from "../hooks/useScrollToTop";
 
 // Icons
 import { FaGithub } from "react-icons/fa";
@@ -35,6 +36,7 @@ const Header = () => {
     >
       <div className="flex ml-4 items-center h-full gap-12">
         <Link
+          onClick={() => useScrollToTop()}
           to="/"
           className="group hover:text-colorDarkGray duration-200 cursor-pointer h-full"
         >

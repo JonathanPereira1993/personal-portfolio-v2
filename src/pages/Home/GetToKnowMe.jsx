@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import GetToKnowMeCards from "../../components/GetToKnowMeCards";
 
 import TechStackImage from "../../assets/TechStack.png";
@@ -7,6 +8,8 @@ import Books from "../../assets/Books/Books.png";
 import MySticker from "../../assets/MySticker.png";
 
 const GetToKnowMe = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="max-w-widthScreen mx-auto mt-[100px]">
       <div className="text-5xl text-center sm:text-left dark:text-colorWhite font-semibold mb-8">
@@ -15,7 +18,7 @@ const GetToKnowMe = () => {
       <div className="grid sm:grid-cols-2 grid-cols-1 sm:grid-rows-2 grid-rows-4 gap-4 ">
         <GetToKnowMeCards
           className="group"
-          to="/About"
+          onClick={() => navigate("/About")}
           title={"About me"}
           description={"Who I am and what I do"}
         >
@@ -26,7 +29,7 @@ const GetToKnowMe = () => {
           />
         </GetToKnowMeCards>
         <GetToKnowMeCards
-          to="/Notebook"
+          onClick={() => navigate("/Notebook")}
           title={"Notebook"}
           description={"My thoughts, insights, and reflections"}
         >
@@ -34,7 +37,7 @@ const GetToKnowMe = () => {
         </GetToKnowMeCards>
         <GetToKnowMeCards
           className="group"
-          to="/Bookshelf"
+          onClick={() => navigate("/Bookshelf")}
           title={"Bookshelf"}
           description={"Books and pieces of wisdom I’ve enjoyed reading"}
         >
@@ -46,7 +49,7 @@ const GetToKnowMe = () => {
         </GetToKnowMeCards>
         <GetToKnowMeCards
           className="group"
-          to="/TechStack"
+          onClick={() => navigate("/TechStack")}
           title={"Tech Stack"}
           description={
             "The dev tools, apps, devices, and games I use and play."

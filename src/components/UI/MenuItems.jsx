@@ -1,4 +1,5 @@
 import { useState } from "react";
+import useScrollToTop from "../../hooks/useScrollToTop";
 import Dropdown from "./Dropdown";
 
 import { FaAngleDown } from "react-icons/fa6";
@@ -58,6 +59,7 @@ const MenuItems = ({ items, headerOnTop }) => {
         </>
       ) : (
         <Link
+          onClick={() => useScrollToTop()}
           to={items.link}
           className="group duration-300  text-lg relative dark:text-white  rounded-lg p-2 hover:backdrop-blur-[15px]"
         >

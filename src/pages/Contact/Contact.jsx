@@ -64,11 +64,11 @@ const Contact = () => {
 
       <div className="flex justify-center gap-6 mt-20">
         <a href="https://github.com/JonathanPereira1993" target="_blank">
-          <FaGithub className="w-8 h-8 text-colorOnyx dark:text-[#b6b5b5] cursor-pointer hover:text-white transition-transform duration-200" />
+          <FaGithub className="w-8 h-8 text-colorOnyx dark:text-[#b6b5b5] cursor-pointer hover:opacity-50 transition-transform duration-200" />
         </a>
 
         <a href="https://www.instagram.com/jonathanmyself/" target="_blank">
-          <FaInstagram className="w-8 h-8 text-colorOnyx dark:text-[#b6b5b5] cursor-pointer hover:text-white transition-transform duration-200" />
+          <FaInstagram className="w-8 h-8 text-colorOnyx dark:text-[#b6b5b5] cursor-pointer hover:opacity-50 transition-transform duration-200" />
         </a>
       </div>
     </div>

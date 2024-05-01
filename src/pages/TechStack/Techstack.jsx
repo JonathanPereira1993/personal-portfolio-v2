@@ -9,7 +9,7 @@ const Techstack = () => {
     <div className="relative max-w-widthScreen pt-[150px] sm:pt-[300px] mx-auto">
       <Banner
         title="Tech Stack"
-        subtitle="The dev tools, apps, devices, and games I use and play"
+        subtitle="The dev tools, apps and devices I love and use."
       />
 
       <div className="pt-[100px] w-[90vw] mx-auto sm:w-full grid sm:grid-cols-3 grid-cols-1 gap-4">

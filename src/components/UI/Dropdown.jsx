@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import useScrollToTop from "../../hooks/useScrollToTop";
 
 const Dropdown = ({ submenus, dropdown, headerOnTop }) => {
   return (
@@ -20,7 +21,9 @@ const Dropdown = ({ submenus, dropdown, headerOnTop }) => {
             dropdown ? "h-full" : "h-0"
           }`}
         >
-          <Link to={submenu.link}>{submenu.dropdownName}</Link>
+          <Link onClick={() => useScrollToTop()} to={submenu.link}>
+            {submenu.dropdownName}
+          </Link>
         </li>
       ))}
     </ul>

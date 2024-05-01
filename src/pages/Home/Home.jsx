@@ -1,6 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+import MyCV from "../../assets/CV/JonathanPereira_CV.pdf";
 import ProfilePhoto from "../../assets/avatar-photo2.png";
 import Button from "../../components/UI/Button";
+import useScrollToTop from "../../hooks/useScrollToTop";
 
 import { DiCode, DiGitBranch } from "react-icons/di";
 import { GoRocket } from "react-icons/go";
@@ -9,6 +12,8 @@ import GetToKnowMe from "./GetToKnowMe";
 import SelectedWork from "./SelectedWork";
 
 const Home = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="w-[90vw] sm:w-full mx-auto">
       <div className="relative max-w-widthScreen flex pt-[400px] pb-[150px] sm:pb-[250px] mx-auto">
@@ -27,8 +32,17 @@ const Home = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row items-center gap-4">
-              <Button className="w-full sm:w-fit">See my resume</Button>
-              <Button isOutline className="w-full sm:w-fit">
+              <Button href={MyCV} className="w-full sm:w-fit">
+                See my resume
+              </Button>
+              <Button
+                isOutline
+                className="w-full sm:w-fit"
+                onClick={() => {
+                  navigate("/contact");
+                  useScrollToTop();
+                }}
+              >
                 Get in touch
               </Button>
             </div>
