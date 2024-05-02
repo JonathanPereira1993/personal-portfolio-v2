@@ -7,7 +7,7 @@ import { selectedWorkContent } from "../../data/ContentData";
 
 const Work = () => {
   return (
-    <div className="relative max-w-widthScreen pt-[150px] sm:pt-[300px] mx-auto">
+    <div className="relative w-[90vw] sm:w-full max-w-widthScreen pt-[150px] sm:pt-[300px] mx-auto">
       <Banner title="Projects" subtitle="Projects and ideas I've worked on" />
 
       <div className="rounded-lg h-[40vh] mt-9 p-6 flex flex-col justify-center items-center bg-[#F6F6F6] dark:bg-[#181818] border border-[#EBEBEB] dark:border-[#383737]">

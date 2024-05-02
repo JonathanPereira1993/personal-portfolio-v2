@@ -4,7 +4,7 @@ import Banner from "../../components/Banner";
 
 const About = () => {
   return (
-    <div className="relative max-w-widthScreen pt-[150px] sm:pt-[300px] mx-auto">
+    <div className="relative w-[90vw] sm:w-full max-w-widthScreen pt-[150px] sm:pt-[300px] mx-auto">
       <Banner title="A little bit about me" subtitle="Who I am and what I do" />
 
       <div className="grid grid-cols-3 gap-[75px] mt-[60px]">

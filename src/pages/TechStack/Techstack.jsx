@@ -6,7 +6,7 @@ import { techStackItems } from "../../data/ContentData";
 
 const Techstack = () => {
   return (
-    <div className="relative max-w-widthScreen pt-[150px] sm:pt-[300px] mx-auto">
+    <div className="relative w-[90vw] sm:w-full max-w-widthScreen pt-[150px] sm:pt-[300px] mx-auto">
       <Banner
         title="Tech Stack"
         subtitle="The dev tools, apps and devices I love and use."

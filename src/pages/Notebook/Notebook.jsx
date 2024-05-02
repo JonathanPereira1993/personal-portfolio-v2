@@ -3,7 +3,7 @@ import Banner from "../../components/Banner";
 
 const Notebook = () => {
   return (
-    <div className="relative max-w-widthScreen pt-[150px] sm:pt-[300px] mx-auto">
+    <div className="relative w-[90vw] sm:w-full max-w-widthScreen pt-[150px] sm:pt-[300px] mx-auto">
       <Banner
         title="Notebook"
         subtitle="My thoughts, insights, and reflections"

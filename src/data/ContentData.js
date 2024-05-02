@@ -89,11 +89,11 @@ export const headerLinks = [
     name: "Work",
     link: "/Work",
   },
-  {
-    id: 2,
-    name: "Notebook",
-    link: "/Notebook",
-  },
+  // {
+  //   id: 2,
+  //   name: "Notebook",
+  //   link: "/Notebook",
+  // },
   {
     id: 3,
     name: "Contact",

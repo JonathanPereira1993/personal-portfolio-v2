@@ -9,7 +9,7 @@ import { FaInstagram } from "react-icons/fa6";
 
 const Contact = () => {
   return (
-    <div className="relative max-w-widthScreen pt-[150px] sm:pt-[300px] mx-auto">
+    <div className="relative w-[90vw] sm:w-full max-w-widthScreen pt-[150px] sm:pt-[300px] mx-auto">
       <Banner title="Get in touch" subtitle="Let's build something awesome" />
 
       <form
