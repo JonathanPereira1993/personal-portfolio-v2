@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import GetToKnowMeCards from "../../components/GetToKnowMeCards";
+import useScrollToTop from "../../hooks/useScrollToTop";
 
 import TechStackImage from "../../assets/TechStack.png";
 
@@ -18,7 +19,10 @@ const GetToKnowMe = () => {
       <div className="grid sm:grid-cols-2 grid-cols-1 sm:grid-rows-2 grid-rows-4 gap-4 ">
         <GetToKnowMeCards
           className="group"
-          onClick={() => navigate("/About")}
+          onClick={() => {
+            navigate("/About");
+            useScrollToTop();
+          }}
           title={"About me"}
           description={"Who I am and what I do"}
         >
@@ -29,7 +33,10 @@ const GetToKnowMe = () => {
           />
         </GetToKnowMeCards>
         <GetToKnowMeCards
-          onClick={() => navigate("/Notebook")}
+          onClick={() => {
+            navigate("/Notebook");
+            useScrollToTop();
+          }}
           title={"Notebook"}
           description={"My thoughts, insights, and reflections"}
         >
@@ -37,7 +44,10 @@ const GetToKnowMe = () => {
         </GetToKnowMeCards>
         <GetToKnowMeCards
           className="group"
-          onClick={() => navigate("/Bookshelf")}
+          onClick={() => {
+            navigate("/Bookshelf");
+            useScrollToTop();
+          }}
           title={"Bookshelf"}
           description={"Books and pieces of wisdom I’ve enjoyed reading"}
         >
@@ -49,7 +59,10 @@ const GetToKnowMe = () => {
         </GetToKnowMeCards>
         <GetToKnowMeCards
           className="group"
-          onClick={() => navigate("/TechStack")}
+          onClick={() => {
+            navigate("/TechStack");
+            useScrollToTop();
+          }}
           title={"Tech Stack"}
           description={
             "The dev tools, apps, devices, and games I use and play."

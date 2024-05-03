@@ -21,7 +21,7 @@ import Navbar from "./Navbar";
 const Header = () => {
   const [isOnTop, setIsOnTop] = useState(false);
   const { darkMode, setDarkMode } = useContext(DarkModeContext);
-  const [isMobile, setIsMobile] = useState(true);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -33,6 +33,11 @@ const Header = () => {
 
   useEffect(() => {
     if (typeof window !== "undefined") {
+      if (window.innerWidth > 640) {
+        setIsMobile(false);
+      } else {
+        setIsMobile(true);
+      }
       window.addEventListener("resize", () => {
         if (window.innerWidth > 640) {
           setIsMobile(false);
@@ -97,7 +102,7 @@ const Header = () => {
         className="
         top-0 w-full fixed flex z-50 dark:shadow-darkMode rounded-b-xl border dark:border-transparent duration-300 shadow-lg h-[60px] border-[rgba(255, 255, 255, 0.25)] left-1/2 -translate-x-1/2 justify-between max-w-widthScreen mx-auto px-4 backdrop-blur-[25px] bg-colorWhite70 dark:bg-colorWhite25"
       >
-        <nav className="flex w-full justify-between items-center">
+        <nav className="flex dark:text-white w-full justify-between items-center">
           <Link to="/" onClick={() => useScrollToTop()}>
             <IoHomeOutline className="w-6 h-6" />
           </Link>

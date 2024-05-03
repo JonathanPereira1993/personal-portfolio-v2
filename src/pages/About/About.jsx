@@ -7,7 +7,7 @@ const About = () => {
     <div className="relative w-[90vw] sm:w-full max-w-widthScreen pt-[150px] sm:pt-[300px] mx-auto">
       <Banner title="A little bit about me" subtitle="Who I am and what I do" />
 
-      <div className="grid grid-cols-3 gap-[75px] mt-[60px]">
+      <div className="sm:grid sm:grid-cols-3 gap-[75px] mt-[60px]">
         <div className="col-span-2">
           {/* Section */}
           <div>
@@ -77,8 +77,12 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div>
-          <img src={ProfilePhoto} alt="" />
+        <div className="flex justify-center sm:block w-full">
+          <img
+            className="mx-auto sm:max-w-60 max-w-40 mt-20"
+            src={ProfilePhoto}
+            alt="Profile Picture"
+          />
         </div>
       </div>
     </div>

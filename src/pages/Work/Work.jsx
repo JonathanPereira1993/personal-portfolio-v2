@@ -11,10 +11,10 @@ const Work = () => {
       <Banner title="Projects" subtitle="Projects and ideas I've worked on" />
 
       <div className="rounded-lg h-[40vh] mt-9 p-6 flex flex-col justify-center items-center bg-[#F6F6F6] dark:bg-[#181818] border border-[#EBEBEB] dark:border-[#383737]">
-        <h2 className="text-3xl text-black dark:text-white">
+        <h2 className="text-3xl text-center text-black dark:text-white">
           I will post projects here soon
         </h2>
-        <h3 className="text-lg mt-4 text-black dark:text-white">
+        <h3 className="text-lg text-center mt-4 text-black dark:text-white">
           In the meantime, you can see this portfolio that was made entirely by
           me
         </h3>

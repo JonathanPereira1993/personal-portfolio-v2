@@ -14,7 +14,7 @@ const Contact = () => {
 
       <form
         action=""
-        className="mt-10 mx-auto sm:w-full w-[95vw] bg-[#F6F6F6] dark:bg-[#181818]  rounded-xl shadow-lg border dark:border-[#383737] pb-4"
+        className="mt-10 sm:w-full bg-[#F6F6F6] dark:bg-[#181818]  rounded-xl shadow-lg border dark:border-[#383737] pb-4"
       >
         <div className="px-3 h-[54px] w-full dark:text-white flex items-center justify-between bg-[#F6F6F6] dark:bg-[#181818] rounded-t-xl border-b-2 dark:border-[#383737]">
           <div className="flex items-center gap-2">
