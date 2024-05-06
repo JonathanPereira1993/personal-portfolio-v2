@@ -9,6 +9,20 @@ import SassLogo from "../assets/TechStackImages/SassLogo.png";
 import TailwindLogo from "../assets/TechStackImages/Tailwind.png";
 import VSCodeLogo from "../assets/TechStackImages/VSCode.png";
 
+// Bookshelf cover images
+import FourThousandWeeks from "../assets/Books/BookShelf/4000Weeks.jpg";
+import Power from "../assets/Books/BookShelf/48RulesOfPower.jpg";
+import AtomicHabits from "../assets/Books/BookShelf/AtomicHabits.jpg";
+import BillionsAndBillions from "../assets/Books/BookShelf/BillionsAndBillions.jpg";
+import Cosmos from "../assets/Books/BookShelf/Cosmos.jpg";
+import ElonMusk from "../assets/Books/BookShelf/ElonMusk.jpg";
+import lifeTreeZero from "../assets/Books/BookShelf/Life3_0.jpg";
+import PsycologyOfMoney from "../assets/Books/BookShelf/PsycologyOfMoney.jpg";
+import SecretsMillionaire from "../assets/Books/BookShelf/SecretsMillionaire.jpg";
+import ThinkAndGetRich from "../assets/Books/BookShelf/ThinkAndGetRich.jpg";
+import CantHurtMe from "../assets/Books/BookShelf/cant-hurt-me.jpg";
+import RichDadPoorDad from "../assets/Books/BookShelf/rich-dad-poor-dad.jpg";
+
 export const selectedWorkContent = [
   {
     id: 1,
@@ -114,5 +128,85 @@ export const headerLinks = [
         link: "/TechStack",
       },
     ],
+  },
+];
+
+export const BookShelf = [
+  {
+    id: 1,
+    title: "Can't Hurt Me",
+    author: "David Goggins",
+    stars: 5,
+    coverImage: CantHurtMe,
+  },
+  {
+    id: 2,
+    title: "Billions and Billions",
+    author: "Carl Sagan",
+    stars: 5,
+    coverImage: BillionsAndBillions,
+  },
+  {
+    id: 3,
+    title: "Atomic Habits",
+    author: "James Clear",
+    stars: 5,
+    coverImage: AtomicHabits,
+  },
+  {
+    id: 4,
+    title: "4000 Weeks",
+    author: "Oliver Burkeman",
+    stars: 3,
+    coverImage: FourThousandWeeks,
+  },
+  {
+    id: 5,
+    title: "Think and Grow Rich!",
+    author: "Napoleon Hill",
+    stars: 4,
+    coverImage: ThinkAndGetRich,
+  },
+  {
+    id: 6,
+    title: "Cosmos",
+    author: "Carl Sagan",
+    stars: 5,
+    coverImage: Cosmos,
+  },
+  {
+    id: 7,
+    title: "Life 3.0",
+    author: "Max Tegmark",
+    stars: 5,
+    coverImage: lifeTreeZero,
+  },
+  {
+    id: 8,
+    title: "Secrets of the Millionaire Mind",
+    author: "T. Harv Eker",
+    stars: 5,
+    coverImage: SecretsMillionaire,
+  },
+  {
+    id: 9,
+    title: "The Psycology of Money",
+    author: "Morgan Housel",
+    stars: 5,
+    coverImage: PsycologyOfMoney,
+  },
+  {
+    id: 10,
+    title: "Rich Dad Poor Dad",
+    author: "Robert T. Kiyosaki",
+    stars: 5,
+    coverImage: RichDadPoorDad,
+  },
+  {
+    id: 11,
+    title: "Elon Musk",
+    author: "Ashlee Vange",
+    stars: 5,
+    coverImage: ElonMusk,
   },
 ];

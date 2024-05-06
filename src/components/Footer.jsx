@@ -1,10 +1,19 @@
-import React from "react";
+import React, { useContext, useEffect, useState } from "react";
+import { MdDarkMode } from "react-icons/md";
+import { WiDaySunny } from "react-icons/wi";
 import { Link } from "react-router-dom";
+import { DarkModeContext } from "../context/DarkModeContext";
 
 import BgImage from "./UI/BgImage";
 
 const Footer = () => {
   const dateYear = new Date();
+  const { darkMode, setDarkMode } = useContext(DarkModeContext);
+
+  const toggleDarkMode = () => {
+    setDarkMode((prevDarkMode) => !prevDarkMode);
+  };
+
   return (
     <div className="relative mt-[100px] border-t border-colorCardBorder dark:border-[#ffffff30] sm:py-16 pt-16 pb-6 overflow-hidden">
       <BgImage
@@ -87,7 +96,18 @@ const Footer = () => {
               </a>
             </div>
           </div>
+          <div
+            className="cursor-pointer sm:hidden flex justify-center"
+            onClick={() => toggleDarkMode()}
+          >
+            {darkMode ? (
+              <WiDaySunny className="w-6 h-6 text-colorOnyx dark:text-white cursor-pointer hover:scale-110 transition-transform duration-200" />
+            ) : (
+              <MdDarkMode className="w-6 h-6 cursor-pointer hover:scale-110 duration-200" />
+            )}
+          </div>
         </div>
+
         <div className="font-light block sm:hidden sm:opacity-0 text-center opacity-100 dark:text-[#80808090]">
           <span className="dark:text-[#80808090]">{`© ${dateYear.getFullYear()} Jonathan Pereira. All Rights Reserved.`}</span>
         </div>
