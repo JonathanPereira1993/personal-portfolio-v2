@@ -16,9 +16,14 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm("service_nwd7j7c", "template_vmq5rlf", form.current, {
-        publicKey: "2n8g8LjbhyoU9FiH_",
-      })
+      .sendForm(
+        import.meta.env.VITE_EMAIL_JS_ID,
+        "template_vmq5rlf",
+        form.current,
+        {
+          publicKey: "2n8g8LjbhyoU9FiH_",
+        }
+      )
       .then(
         () => {
           console.log("SUCCESS!");

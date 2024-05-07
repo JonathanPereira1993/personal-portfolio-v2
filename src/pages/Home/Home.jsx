@@ -32,9 +32,13 @@ const Home = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row items-center gap-4">
-              <Button href={MyCV} className="w-full sm:w-fit">
+              <a
+                href={MyCV}
+                target="_blank"
+                className="w-full sm:w-fit border-2 cursor-pointer h-[60px] duration-100 whitespace-nowrap rounded-[9px] px-8 py-4 flex items-center justify-center bg-[#222222] border-[#222222] hover:bg-[#000000] hover:shadow-xl active:bg-[#000000]  hover:bg-[#000000] text-white disabled:cursor-not-allowed active:scale-[0.98]"
+              >
                 See my resume
-              </Button>
+              </a>
               <Button
                 isOutline
                 className="w-full sm:w-fit"
