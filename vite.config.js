@@ -10,7 +10,7 @@ export default defineConfig({
     loader: "jsx",
   },
   plugins: [react()],
-  base: "/",
+  base: "/personal-portfolio-v2/",
   define: {
     "process.env.VITE_EMAIL_JS_ID": JSON.stringify(
       process.env.VITE_EMAIL_JS_ID
