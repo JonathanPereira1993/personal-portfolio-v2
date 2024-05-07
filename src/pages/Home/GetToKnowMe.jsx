@@ -33,12 +33,8 @@ const GetToKnowMe = () => {
           />
         </GetToKnowMeCards>
         <GetToKnowMeCards
-          onClick={() => {
-            navigate("/Notebook");
-            useScrollToTop();
-          }}
           title={"Notebook"}
-          description={"My thoughts, insights, and reflections"}
+          description={"Not yet implemented. But soon!"}
         >
           <img src={MySticker} alt="" className="w-40 md:w-48" />
         </GetToKnowMeCards>
