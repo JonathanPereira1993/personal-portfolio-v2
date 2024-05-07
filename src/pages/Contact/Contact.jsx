@@ -102,7 +102,7 @@ const Contact = () => {
             <h2
               className={`${
                 isSuccess ? "text-green-500" : "text-red-500"
-              } text-3xl`}
+              } text-3xl text-center`}
             >
               {isSuccess
                 ? "Message sent successfully"
