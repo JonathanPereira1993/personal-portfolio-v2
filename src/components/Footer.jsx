@@ -3,6 +3,7 @@ import { MdDarkMode } from "react-icons/md";
 import { WiDaySunny } from "react-icons/wi";
 import { Link } from "react-router-dom";
 import { DarkModeContext } from "../context/DarkModeContext";
+import useScrollToTop from "../hooks/useScrollToTop";
 
 import BgImage from "./UI/BgImage";
 
@@ -10,8 +11,17 @@ const Footer = () => {
   const dateYear = new Date();
   const { darkMode, setDarkMode } = useContext(DarkModeContext);
 
+  const setThemeInStorage = (theme) => {
+    localStorage.setItem("theme", theme);
+  };
+
   const toggleDarkMode = () => {
     setDarkMode((prevDarkMode) => !prevDarkMode);
+    if (darkMode) {
+      setThemeInStorage("light");
+    } else {
+      setThemeInStorage("dark");
+    }
   };
 
   return (
@@ -40,24 +50,28 @@ const Footer = () => {
             <h3 className="mb-8 dark:text-colorWhite font-bold">Links</h3>
             <div className="flex flex-col gap-4 font-light">
               <Link
+                onClick={() => useScrollToTop()}
                 to={"/About"}
                 className="z-50 dark:text-[#C5C5C5] hover:underline duration-200 cursor-pointer"
               >
                 About
               </Link>
               <Link
+                onClick={() => useScrollToTop()}
                 to={"/Work"}
                 className="z-50 dark:text-[#C5C5C5] hover:underline duration-200 cursor-pointer"
               >
                 Work
               </Link>
               <Link
+                onClick={() => useScrollToTop()}
                 to={"/Techstack"}
                 className="z-50 dark:text-[#C5C5C5] hover:underline duration-200 cursor-pointer"
               >
                 Tech Stack
               </Link>
               <Link
+                onClick={() => useScrollToTop()}
                 to={"/Contact"}
                 className="z-50 dark:text-[#C5C5C5] hover:underline duration-200 cursor-pointer"
               >

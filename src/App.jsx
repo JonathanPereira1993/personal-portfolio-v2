@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
 import Footer from "./components/Footer";
@@ -15,6 +15,20 @@ import Work from "./pages/Work/Work";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
+
+  const getThemeInStorage = () => {
+    return localStorage.getItem("theme");
+  };
+
+  useEffect(() => {
+    const theme = getThemeInStorage();
+
+    if (theme != undefined && theme === "light") {
+      setDarkMode(false);
+    } else if (theme != undefined && theme === "dark") {
+      setDarkMode(true);
+    }
+  }, []);
 
   return (
     <DarkModeContext.Provider value={{ darkMode, setDarkMode }}>

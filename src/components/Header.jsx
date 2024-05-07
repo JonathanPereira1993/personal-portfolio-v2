@@ -3,6 +3,8 @@ import { NavLink } from "react-router-dom";
 import { DarkModeContext } from "../context/DarkModeContext";
 import useScrollToTop from "../hooks/useScrollToTop";
 
+import "./CustomCSS/Styles.css";
+
 // Icons
 import { FaGithub } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
@@ -48,20 +50,29 @@ const Header = () => {
     }
   }, []);
 
+  const setThemeInStorage = (theme) => {
+    localStorage.setItem("theme", theme);
+  };
+
   const toggleDarkMode = () => {
     setDarkMode((prevDarkMode) => !prevDarkMode);
+    if (darkMode) {
+      setThemeInStorage("light");
+    } else {
+      setThemeInStorage("dark");
+    }
   };
 
   const HeaderDesktop = () => {
     return (
       <header
-        className={`${
+        className={`header ${
           isOnTop
-            ? "top-0 rounded-t-none bg-colorWhite70 dark:bg-[#808080ce] dark:shadow-darkMode dark:text-white backdrop-blur-[15px]"
-            : "top-8 backdrop-blur-[25px] bg-colorWhite70 dark:bg-colorWhite25"
+            ? "header--top bg-colorWhite70 dark:bg-[#808080ce] dark:shadow-darkMode dark:text-white backdrop-blur-[15px]"
+            : "backdrop-blur-[25px] bg-colorWhite70 dark:bg-colorWhite25"
         } ${
           isMobile ? "mobile-screen" : "desktop-screen"
-        } fixed w-full flex z-50 dark:shadow-darkMode rounded-xl border dark:border-transparent duration-300 shadow-lg h-[60px] border-[rgba(255, 255, 255, 0.25)] left-1/2 -translate-x-1/2 justify-between max-w-widthScreen mx-auto px-4`}
+        } fixed w-full flex z-50 dark:shadow-darkMode rounded-xl border dark:border-transparent shadow-lg h-[60px] border-[rgba(255, 255, 255, 0.25)] left-1/2 -translate-x-1/2 justify-between max-w-widthScreen mx-auto px-4`}
       >
         <div className="flex ml-4 items-center h-full gap-12">
           <NavLink

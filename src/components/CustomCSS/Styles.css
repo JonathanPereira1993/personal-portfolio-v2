@@ -15,9 +15,20 @@ nav a.active .nav-border-bottom {
   background-color: #15151580;
   color: white;
   border-radius: 12px;
-} 
+}
 
 .dark .mobile-screen nav a.active {
   background-color: #FFFFFF1A;
   border-radius: 12px;
 } 
+
+.header.header--top {
+  top: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+.header {
+  top: 32px;
+  transition: top 300ms ease;
+}

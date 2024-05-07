@@ -12,7 +12,7 @@ const Techstack = () => {
         subtitle="The dev tools, apps and devices I love and use."
       />
 
-      <div className="pt-[100px] w-[90vw] mx-auto sm:w-full grid sm:grid-cols-3 grid-cols-1 gap-4">
+      <div className="w-[90vw] mt-[60px] mx-auto sm:w-full grid sm:grid-cols-3 grid-cols-1 gap-4">
         {techStackItems.map((item) => (
           <TechStackItem
             key={item.id}

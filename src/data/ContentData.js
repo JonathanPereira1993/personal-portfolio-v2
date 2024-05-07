@@ -74,7 +74,7 @@ export const techStackItems = [
   },
   {
     id: 5,
-    title: "Outsystems",
+    title: "OutSystems",
     image: OutsystemsLogo,
     tagName: "Platform",
   },

@@ -11,7 +11,7 @@ const Bookshelf = () => {
         title="Bookshelf"
         subtitle="Books and pieces of wisdom I’ve enjoyed reading"
       />
-      <div className="grid sm:grid-cols-4 grid-cols-2 mt-10 gap-4">
+      <div className="grid sm:grid-cols-4 grid-cols-2  mt-[60px] gap-4">
         {BookShelf.map((book, idx) => (
           <BookShelfItem
             key={idx}
