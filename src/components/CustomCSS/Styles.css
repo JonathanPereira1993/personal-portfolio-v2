@@ -1,0 +1,23 @@
+.bg-image {
+  pointer-events: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+nav a.active .nav-border-bottom {
+  height: 3px;
+}
+
+.mobile-screen nav a.active {
+  background-color: #15151580;
+  color: white;
+  border-radius: 12px;
+} 
+
+.dark .mobile-screen nav a.active {
+  background-color: #FFFFFF1A;
+  border-radius: 12px;
+} 

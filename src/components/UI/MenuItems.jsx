@@ -2,9 +2,11 @@ import { useState } from "react";
 import useScrollToTop from "../../hooks/useScrollToTop";
 import Dropdown from "./Dropdown";
 
+import "../CustomCSS/Styles.css";
+
 import { FaAngleDown } from "react-icons/fa6";
 
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import { useEffect, useRef } from "react";
 
@@ -58,18 +60,18 @@ const MenuItems = ({ items, headerOnTop }) => {
           />
         </>
       ) : (
-        <Link
+        <NavLink
           onClick={() => useScrollToTop()}
           to={items.link}
-          className="group duration-300  text-lg relative dark:text-white  rounded-lg p-2 hover:backdrop-blur-[15px]"
+          className="group header_nav-link duration-300  text-lg relative dark:text-white  rounded-lg p-2 hover:backdrop-blur-[15px]"
         >
           {items.name}
           <div
-            className={`${
+            className={`nav-border-bottom ${
               headerOnTop ? "bg-zinc-300" : "bg-white"
-            } h-0 duration-300 group-hover:h-1 w-full rounded-t-xl absolute  left-0 right-0  -bottom-[8px]`}
+            } h-0 duration-300 group-hover:h-1 w-full rounded-t-xl absolute left-0 right-0  -bottom-[8px]`}
           />
-        </Link>
+        </NavLink>
       )}
     </li>
   );

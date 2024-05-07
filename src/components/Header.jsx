@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { DarkModeContext } from "../context/DarkModeContext";
 import useScrollToTop from "../hooks/useScrollToTop";
 
@@ -59,10 +59,12 @@ const Header = () => {
           isOnTop
             ? "top-0 rounded-t-none bg-colorWhite70 dark:bg-[#808080ce] dark:shadow-darkMode dark:text-white backdrop-blur-[15px]"
             : "top-8 backdrop-blur-[25px] bg-colorWhite70 dark:bg-colorWhite25"
+        } ${
+          isMobile ? "mobile-screen" : "desktop-screen"
         } fixed w-full flex z-50 dark:shadow-darkMode rounded-xl border dark:border-transparent duration-300 shadow-lg h-[60px] border-[rgba(255, 255, 255, 0.25)] left-1/2 -translate-x-1/2 justify-between max-w-widthScreen mx-auto px-4`}
       >
         <div className="flex ml-4 items-center h-full gap-12">
-          <Link
+          <NavLink
             onClick={() => useScrollToTop()}
             to="/"
             className="group hover:text-colorDarkGray duration-200 cursor-pointer h-full"
@@ -70,7 +72,7 @@ const Header = () => {
             <span className="dark:text-white flex h-full items-center text-black text-xl">
               portfolio
             </span>
-          </Link>
+          </NavLink>
 
           <Navbar headerOnTop={isOnTop} />
         </div>
@@ -99,28 +101,40 @@ const Header = () => {
   const HeaderMobile = () => {
     return (
       <header
-        className="
-        top-0 w-full fixed flex z-50 dark:shadow-darkMode rounded-b-xl border dark:border-transparent duration-300 shadow-lg h-[60px] border-[rgba(255, 255, 255, 0.25)] left-1/2 -translate-x-1/2 justify-between max-w-widthScreen mx-auto px-4 backdrop-blur-[25px] bg-colorWhite70 dark:bg-colorWhite25"
+        className={`${isMobile ? "mobile-screen" : "desktop-screen"} 
+        top-0 w-full fixed flex z-50 dark:shadow-darkMode rounded-b-xl border dark:border-transparent duration-300 shadow-lg h-[60px] border-[rgba(255, 255, 255, 0.25)] left-1/2 -translate-x-1/2 justify-between max-w-widthScreen mx-auto px-4 backdrop-blur-[25px] bg-colorWhite70 dark:bg-colorWhite25`}
       >
         <nav className="flex dark:text-white w-full justify-between items-center">
-          <Link to="/" onClick={() => useScrollToTop()}>
+          <NavLink to="/" className="p-2" onClick={() => useScrollToTop()}>
             <IoHomeOutline className="w-6 h-6" />
-          </Link>
-          <Link to="/about" onClick={() => useScrollToTop()}>
+          </NavLink>
+          <NavLink to="/about" className="p-2" onClick={() => useScrollToTop()}>
             <IoPersonOutline className="w-6 h-6" />
-          </Link>
-          <Link to="/work" onClick={() => useScrollToTop()}>
+          </NavLink>
+          <NavLink to="/work" className="p-2" onClick={() => useScrollToTop()}>
             <IoBriefcaseOutline className="w-6 h-6" />
-          </Link>
-          <Link to="/bookshelf" onClick={() => useScrollToTop()}>
+          </NavLink>
+          <NavLink
+            to="/bookshelf"
+            className="p-2"
+            onClick={() => useScrollToTop()}
+          >
             <IoBookOutline className="w-6 h-6" />
-          </Link>
-          <Link to="/techstack" onClick={() => useScrollToTop()}>
+          </NavLink>
+          <NavLink
+            to="/techstack"
+            className="p-2"
+            onClick={() => useScrollToTop()}
+          >
             <IoGridOutline className="w-6 h-6" />
-          </Link>
-          <Link to="/contact" onClick={() => useScrollToTop()}>
+          </NavLink>
+          <NavLink
+            to="/contact"
+            className="p-2"
+            onClick={() => useScrollToTop()}
+          >
             <IoMailOutline className="w-6 h-6" />
-          </Link>
+          </NavLink>
         </nav>
       </header>
     );

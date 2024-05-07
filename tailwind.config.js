@@ -34,6 +34,9 @@ export default {
       padding: {
         paddingX: "var(--global-padding-x)",
       },
+      aspectRatio: {
+        "5/8": "5 / 8",
+      },
     },
     fontFamily: {
       signature: ["Great Vibes"],

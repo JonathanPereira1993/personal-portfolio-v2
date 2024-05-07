@@ -52,7 +52,7 @@ const Footer = () => {
                 Work
               </Link>
               <Link
-                to={"/Techstach"}
+                to={"/Techstack"}
                 className="z-50 dark:text-[#C5C5C5] hover:underline duration-200 cursor-pointer"
               >
                 Tech Stack
@@ -71,28 +71,16 @@ const Footer = () => {
             </h3>
             <div className="flex flex-col gap-4 font-light">
               <a
-                href="#"
-                className="z-50 dark:text-[#C5C5C5] hover:underline duration-200  cursor-pointer"
-              >
-                Email
-              </a>
-              <a
-                href="#"
+                href="https://www.linkedin.com/in/jonathan-pereira-5421b3152/"
                 className="z-50 dark:text-[#C5C5C5] hover:underline duration-200  cursor-pointer"
               >
                 LinkedIn
               </a>
               <a
-                href="#"
+                href="https://github.com/JonathanPereira1993"
                 className="z-50 dark:text-[#C5C5C5] hover:underline duration-200 cursor-pointer"
               >
                 GitHub
-              </a>
-              <a
-                href="#"
-                className="z-50 dark:text-[#C5C5C5] hover:underline duration-200 cursor-pointer"
-              >
-                Twitter
               </a>
             </div>
           </div>
