@@ -66,7 +66,7 @@ const Header = () => {
         <div className="flex ml-4 items-center h-full gap-12">
           <NavLink
             onClick={() => useScrollToTop()}
-            to="/"
+            to="/personal-portfolio-v2"
             className="group hover:text-colorDarkGray duration-200 cursor-pointer h-full"
           >
             <span className="dark:text-white flex h-full items-center text-black text-xl">
