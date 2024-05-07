@@ -27,7 +27,7 @@ function App() {
             <Header />
             <main>
               <Routes>
-                <Route path="/" element={<Home />} />
+                <Route path="/personal-portfolio-v2" element={<Home />} />
                 <Route path="/About" element={<About />} />
                 <Route path="/Work" element={<Work />} />
                 <Route path="/Notebook" element={<Notebook />} />
