@@ -1,5 +1,5 @@
 {
-  "homepage": "https://JonathanPereira1993.github.io/personal-portfolio-v2",
+  "homepage": "/",
   "name": "personal-portfolio",
   "private": true,
   "version": "0.0.0",
@@ -16,6 +16,7 @@
     "@emailjs/browser": "^4.3.3",
     "axios": "^1.6.8",
     "dotenv": "^16.4.5",
+    "netlify-cli": "^17.25.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.12.0",

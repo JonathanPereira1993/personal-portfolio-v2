@@ -77,7 +77,7 @@ const Header = () => {
         <div className="flex ml-4 items-center h-full gap-12">
           <NavLink
             onClick={() => useScrollToTop()}
-            to="/personal-portfolio-v2"
+            to="/"
             className="group hover:text-colorDarkGray duration-200 cursor-pointer h-full"
           >
             <span className="dark:text-white flex h-full items-center text-black text-xl">
@@ -116,11 +116,7 @@ const Header = () => {
         top-0 w-full fixed flex z-50 dark:shadow-darkMode rounded-b-xl border dark:border-transparent duration-300 shadow-lg h-[60px] border-[rgba(255, 255, 255, 0.25)] left-1/2 -translate-x-1/2 justify-between max-w-widthScreen mx-auto px-4 backdrop-blur-[25px] bg-colorWhite70 dark:bg-colorWhite25`}
       >
         <nav className="flex dark:text-white w-full justify-between items-center">
-          <NavLink
-            to="/personal-portfolio-v2"
-            className="p-2"
-            onClick={() => useScrollToTop()}
-          >
+          <NavLink to="/" className="p-2" onClick={() => useScrollToTop()}>
             <IoHomeOutline className="w-6 h-6" />
           </NavLink>
           <NavLink to="/about" className="p-2" onClick={() => useScrollToTop()}>
